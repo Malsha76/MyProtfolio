@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <link rel="stylesheet" type="text/css" href="/assets/fontawesom/fontawesome-free-6.4.0-web/css/all.css">
+
+    <style>
+        nav {
+          width: 100%;
+           height: auto;
+            border-bottom: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            margin-left: 15px;
+        }
+
+        .nav-text {
+            display: flex;
+            margin-right: 25px;
+        }
+
+        .nav-text>div>a {
+            padding-left: 20px;
+            text-decoration: none;
+        }
+
+         {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            width: 100%;
+            position: relative;
+        }
+
+       .side-bar {
+           width: 250px;
+           height: 1250px;
+           background-color: purple;
+       }
+
+        .main-content {
+            width: calc(100% - 250px);
+            height: auto;
+            margin-left: 250px;
+
+            position: absolute;
+            top: 0;
+
+        }
+
+        .main-root {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 100%;
+
+        }
+
+        .item>img {
+            width: 100%;
+
+        }
+
+        .content-text {
+            padding: 15px;
+        }
+
+        .content-text>p {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .side-menu>li {
+
+            padding-left: 45px;
+            padding-top: 25px;
+            line-height: 1;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            color: white;
+        }
+
+        footer>div>p {
+            color: white;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+        }
+
+        @media(max-width:1024px) {
+            .side-bar {
+                display: none;
+            }
+
+            .main-content {
+                width: 100%;
+                left: 0;
+                top: 0;
+                margin-left: 0px;
+
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        @media(max-width:768px) {
+            .content-text {
+                padding: 20px;
+            }
+        }
+
+        @media(max-width:432px) {
+            .main-root {
+                grid-template-columns: 1fr;
+                margin-left: 30px;
+            }
+
+            nav {
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
+
+            .item>img {
+                width: 90%;
+
+            }
+        }
+
+        @media(max-width:375px) {
+            .content-text>p {
+                font-size: 1.7rem;
+                margin-bottom: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="assets/download.png" alt="main-logo">
+
+        </div>
+        <div class="nav-text">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Service</a></div>
+            <div><a href="#">Contact</a></div>
+            <div><a href="#">About</a></div>
+        </div>
+    </nav>
+</header>
+<section>
+    <div class="side-bar">
+        <ul class="side-menu">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="main-root">
+            <div class="item"><img src="assets/200w.webp" alt=""></div>
+
+
+        </div>
+        <div class="content-text">
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias aspernatur blanditiis consequatur dolor
+               doloremque ducimus earum fugit id impedit, itaque minus, modi nostrum obcaecati ratione reiciendis vel, veritatis voluptates!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ea fugiat ipsa itaque nisi optio tempora voluptate.
+                Alias aperiam autem, consectetur consequuntur distinctio enim, esse facere hic quisquam totam, unde?</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur corporis debitis dolor,
+                est exercitationem hic ipsam mollitia neque obcaecati pariatur perspiciatis porro quo rem repellendus reprehenderit repudiandae vel voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ducimus eaque, exercitationem fugit inventore iste magnam
+             nostrum optio, quo, rerum saepe sit totam vel? Debitis ea eum expedita illum voluptatibus!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt iure laborum nostrum quod sequi veritatis?
+                Accusamus aliquam asperiores corporis exercitationem fuga iste libero nostrum soluta veniam. Deserunt nulla, vel?</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Developed by IJSE</p>
+</footer>
+</body>
