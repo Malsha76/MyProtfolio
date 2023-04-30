@@ -1,0 +1,53 @@
+
+header {
+    background-color:aliceblue;
+    box-shadow: 1px 2px 2px 1px black;
+    position: relative;
+}
+
+header>nav{
+
+    width: 100%;
+    position: relative;
+}
+
+/*main{
+
+}*/
+
+
+main>section:first-child{
+    position: absolute;
+    top: 130px;
+    /*left: 80px;*/
+    right: 100px;
+
+}
+main>section:first-child>img{
+    position: relative;
+    left: 50vw;
+    bottom: 20vh;
+
+}
+
+
+main>section:first-child>h2{
+    font-family: "Robo";
+    font-size: 2.5rem;
+    position: relative;
+    top: 11vh;
+}
+main>section:first-child>h1{
+    font-family: "Fjalla One";
+    font-weight: bold;
+    font-size: 60px;
+    margin:auto;
+    position: relative;
+    top: 10vh;
+
+
+}
+
+
+
+
