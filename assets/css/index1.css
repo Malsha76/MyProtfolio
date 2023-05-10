@@ -105,20 +105,3 @@ body>section:nth-child(1){
     overflow: hidden;
 }
 
-main>section:first-child>h2{        /*hellow i am*/
-    font-family: teko;
-    font-size: 2.8rem;
-    position: relative;
-    top: 11vh;
-}
-
-main>section:first-child>h1{          /*dasun*/
-    font-family: "Fjalla One";
-    font-weight: bold;
-    font-size: 60px;
-    margin:auto;
-    position: relative;
-    top: 10vh;
-
-
-}
