@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case5</title>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+<style>
+
+    div:nth-child(1){
+        background: url("assets/pexels-photo-1612351.jpeg");
+        background-position: center;
+        background-size:cover;
+
+    }
+    div:nth-child(2){
+        background:url("assets/green.jpeg");
+        background-position: center;
+        background-size:cover;
+    }
+    div:nth-child(3){
+        background:url("assets/sunset.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+    div:nth-child(4){
+        background:url("assets/trees.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+    div:nth-child(5){
+        background:url("assets/railway.jpeg") ;
+        background-position: center;
+        background-size:cover;
+    }
+
+
+    section{
+        position:relative;
+        margin: auto;
+        display: flex;
+        width: calc(5*100vw);
+        height: 100vh;
+        animation-iteration-count: infinite;
+        animation-duration: 25s;
+        animation-name: animation;
+        animation-direction: alternate-reverse;
+    }
+
+    div{
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+    }
+
+    @keyframes animation {
+        0%{
+            left: 0;
+        }
+        25%{
+            left: -100vw;
+        }
+        50%{
+            left: -200vw;
+        }
+        75%{
+            left: -300vw;
+        }
+        100%{
+            left: -400vw;
+        }
+    }
+</style>
+</html>
