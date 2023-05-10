@@ -1,53 +1,4 @@
 
-/*header {*/
-/*    background-color:aliceblue;*/
-/*    box-shadow: 1px 2px 2px 1px black;*/
-/*    position: relative;*/
-/*}*/
-
-/*header>nav{*/
-
-/*    width: 100%;*/
-/*    position: relative;*/
-/*}*/
-
-/*!*main{*/
-
-/*}*!*/
-
-
-/*main>section:first-child{*/
-/*    position: absolute;*/
-/*    top: 130px;*/
-/*    !*left: 80px;*!*/
-/*    right: 100px;*/
-
-/*}*/
-/*main>section:first-child>img{*/
-/*    position: relative;*/
-/*    left: 50vw;*/
-/*    bottom: 20vh;*/
-
-/*}*/
-
-
-/*main>section:first-child>h2{*/
-/*    font-family: "Robo";*/
-/*    font-size: 2.5rem;*/
-/*    position: relative;*/
-/*    top: 11vh;*/
-/*}*/
-/*main>section:first-child>h1{*/
-/*    font-family: "Fjalla One";*/
-/*    font-weight: bold;*/
-/*    font-size: 60px;*/
-/*    margin:auto;*/
-/*    position: relative;*/
-/*    top: 10vh;*/
-
-
-/*}*/
-
 body {
     display: flex;
     flex-direction: column;
@@ -142,5 +93,32 @@ main>section:first-child>img{  /*main png*/
     position: relative;
     left: 50vw;
     bottom: 20vh;
+
+}
+body>section:nth-child(1){
+    height:  100vh;
+    width: 98vw;
+    background: #131312;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+main>section:first-child>h2{        /*hellow i am*/
+    font-family: teko;
+    font-size: 2.8rem;
+    position: relative;
+    top: 11vh;
+}
+
+main>section:first-child>h1{          /*dasun*/
+    font-family: "Fjalla One";
+    font-weight: bold;
+    font-size: 60px;
+    margin:auto;
+    position: relative;
+    top: 10vh;
+
 
 }
