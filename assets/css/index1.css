@@ -239,6 +239,87 @@ main>section:nth-child(3)>div>aside {
 
 
 }
+/*!*----gallery----*!*/
+
+/*main>section:nth-child(4){*/
+/*    position: relative;*/
+/*}*/
+
+/*main>section:nth-child(4)>h2{*/
+/*    font-size: 350%;*/
+/*    font-family: teko;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 45vw;*/
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(2){*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    top: 30vh;*/
+/*    height: 60vh;*/
+
+/*}*/
+
+/*main>section:nth-child(4)>div>aside{*/
+/*    margin-right: 15px;*/
+/*    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*#imgPos{*/
+/*    position: relative;*/
+/*    border-radius: 20px;*/
+/*    bottom: 20vh;*/
+/*}*/
+
+
+/*main>section:nth-child(4)>div:nth-child(3){*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    top: 32vh;*/
+/*    height: 60vh;*/
+
+
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(3)>aside{*/
+/*    margin-right: 15px;*/
+/*    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);*/
+
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(1){*/
+/*    background: url("../gallery/photo-1588243291559-c4a0c36bc2dc.jpg");*/
+/*    background-position: center ;*/
+/*    background-size:cover ;*/
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(2){*/
+/*    background: url("../gallery/istockphoto-958126934-170667a.jpg");*/
+/*    background-position: center ;*/
+/*    background-size:cover ;*/
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(3){*/
+/*    background: url("../gallery/images (1).jpg");*/
+/*    background-position: center ;*/
+/*    background-size:cover ;*/
+/*}*/
+
+/*main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){*/
+/*    background: url("../gallery/images (2).jpg");*/
+/*    background-position: center ;*/
+/*    background-size:cover ;*/
+/*}*/
+/*main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){*/
+/*    background: url("../gallery/young-woman-working-home-office-260nw-1690509229.webp");*/
+/*    background-position: center ;*/
+/*    background-size:cover ;*/
+/*}*/
+
 
 
 
