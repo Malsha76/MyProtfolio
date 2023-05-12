@@ -322,22 +322,40 @@ main > section:nth-child(6) > div:nth-child(2) > aside > h3 {
 
 .section_05 {
     position: relative;
+    border: solid 2px ;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
 }
 
 .section_05 > div:nth-child(2) {
-   border: solid 1px black;
-   height: 90vh;
-    width: 80%;
-    background-color: #8a95f8;
-    display: flex;
+   /*border: solid 1px black;*/
+   height: 80vh;
+    width: 60%;
+    /*background-color: #8a95f8;*/
+
+
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+
     position: absolute;
     top:0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    grid-gap: 20px;
 }
-
+.section_05 > div:nth-child(2) >div{
+    /*border: solid 1px;*/
+    background-color: #e73c3c;
+    border-radius: 20px;
+}
+.section_05 > div:nth-child(2) >div>img{
+    margin-bottom: 10%;
+}
 .section_05 > div:nth-child(1) {
     /*position: absolute;*/
     /*top: 0;*/
