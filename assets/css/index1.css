@@ -458,6 +458,7 @@ main > section:nth-child(6) > div:nth-child(2) > aside > h3 {
 .projects {
     box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    padding: 50px;
 }
 
 .section_05 {
@@ -534,3 +535,94 @@ main > .section_05 > div:nth-child(4) {
     margin-bottom: 20px;
     margin-left: 20px;
 }
+
+/*---------------------------Assigment-------------------------------------*/
+
+
+
+main>section:nth-child(8){
+    height: 110vh;
+}
+
+main>section:nth-child(8)>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    position: relative;
+    top: 40vh;
+    width: 65vw;
+    margin: auto;
+    overflow: hidden;
+    overflow-x:scroll;
+    scroll-padding: 24px;
+    justify-content: start;
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside{
+    border-radius: 15px ;
+    border: 1px solid white;
+    height: 56vh;
+    width: 31%;
+    position: relative;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    margin: 12px;
+    min-width: 257px;
+
+
+}
+
+main>section:nth-child(8)>h2:nth-child(1){
+    position: relative;
+    display: flex;
+    top: 20vh;
+    justify-content: center;
+    font-size: 350%;
+    font-family: teko;
+    color: #ffb400;
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>img{
+    position: relative;
+    top: 15%;
+    left: 40%;
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 19%;
+    font-family: teko;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+
+
+main>section:nth-child(8)>div:nth-child(2)>aside>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+    font-family: Abel;
+    font-size: 18px;
+    margin: 20px;
+}
+
+main>section:nth-child(8)>aside:nth-child(3){
+    position: relative;
+    width: 15vw;
+    height: 25vh;
+    left: 70vw;
+    bottom: 450px;
+    border-radius: 100%;
+    background: #1746EC;
+    filter: blur(200px);
+}
+
+
+
+

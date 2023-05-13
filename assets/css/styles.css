@@ -1,3 +1,810 @@
-h2{
-    color: deeppink;
+
+
+
+/*------------------------hedder--------------------------*/
+
+html{
+    scroll-behavior: smooth;
 }
+
+
+body{
+    height:  100vh;
+    width: 99vw;
+    background-color:black;   /*  bodey clor to black*/
+    overflow-x: hidden;
+
+}
+
+
+
+
+body>section:nth-child(1){
+    height:  100vh;
+    width: 98vw;
+    background:gray;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+
+
+}
+
+body>section:nth-child(2){
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    left: 70vw;
+    top: -4px;
+    border-radius: 100%;
+    background: #1746EC;
+    filter: blur(300px);
+}
+
+header{
+    height: 10%;
+    width: 98vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+header:hover{
+    background: black;
+}
+
+/*header>nav>aside>img{   */
+/*    position: relative;*/
+/*    top: 25px;*/
+/*    left: 30px;*/
+
+/*}*/
+
+header>nav{
+
+    width: 90%;
+    position: relative;
+    display: inline-block;
+}
+
+header>nav>li{             /*menu*/
+    display: inline-block;
+    position: relative;
+    left: 55%;
+    bottom: 15px;
+    margin: 20px;
+    transition: all 0.1s ease-in;
+}
+
+a{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    text-decoration: none;
+
+}
+/*------------------------Main Home Page--------------------------*/
+
+
+main{
+    overflow-x: hidden;
+}
+
+main>section:first-child{
+    position: absolute;
+    top: 22vh;
+    left: 6vw;
+}
+
+
+main>section:first-child>h2{        /*hellow i am*/
+   color: black;
+    font-size: 2.8rem;
+    position: relative;
+    top: 11vh;
+}
+
+main>section:first-child>h1{          /*malsha*/
+
+    font-weight: bold;
+    font-size: 60px;
+    margin:auto;
+    position: relative;
+    top: 10vh;
+
+
+
+}
+main>section:first-child>div:nth-child(3){  /*main png*/
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 50vw;
+    border-radius: 100%;
+    bottom: 20vh;
+    background: url("../img/photo_2023-03-16_08-39-53.jpg");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    /*width: 26vw;*/
+    /*height: 53vh;*/
+}
+
+
+
+main>section>article{
+
+    letter-spacing: 1px;
+    font-size: 25px;
+    position: relative;
+    bottom: 35vh;
+}
+
+
+main>section:nth-child(1)>nav{           /*soceal meadia*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 10rem;
+    margin: -1rem 1rem 4rem 0;
+    position: relative;
+    bottom: 35vh;
+    left: 1.5vw;
+
+
+}
+
+main>section>nav>img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(255, 255, 255, 0.2);
+}
+
+
+main>section>nav>div{
+    margin-right: 0.5rem;
+
+}
+
+
+
+/*------------------------About me page--------------------------*/
+
+
+
+main>section:nth-child(2)>aside>h2{     /*about me*/
+    position: absolute;
+    left: 20.5%;
+    bottom: -25%;
+    font-size: 200%;
+    color: red;
+
+
+}
+
+main>section:nth-child(2)>aside>img{  /*about me img*/
+    position: relative;
+    left: 20vw;
+    top: 25vh;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+main>section:nth-child(2)>div{
+    position: relative;
+    width: 12vw;
+    height: 15vh;
+    left: 25vw;
+    top: -60vh;
+    border-radius: 100%;
+    background: red;
+    z-index: -1;
+    filter: blur(200px);
+
+}
+
+
+main>section:nth-child(2)>aside:nth-child(2){
+    position: relative;
+    display: inline-block;
+    left: 44%;
+    top: -25vh;
+}
+
+main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
+    font-size:200%;
+    font-weight: bold;
+
+
+}
+
+main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
+
+    font-size: 150%;
+}
+
+/*---------------------------aducation-------------------------------------*/
+
+
+main>section:nth-child(3){
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+}
+
+
+main>section:nth-child(3)>h2{
+    font-size: 200%;
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 45vw;
+
+}
+
+main>section:nth-child(3)>aside:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 40vw;
+    right: 15%;
+    top: 32%;
+    position: relative;
+}
+
+
+main>section:nth-child(3)>div{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    position: relative;
+
+}
+
+main>section:nth-child(3)>div>aside {
+    width: 30vw;
+    font-size: 20px;
+    position: relative;
+    left: 7%;
+    bottom: 150px;
+    letter-spacing: 2px;
+
+
+
+}
+
+
+/*--------------gallery---------------------*/
+
+main>section:nth-child(4){
+    position: relative;
+}
+
+main>section:nth-child(4)>h2{
+    font-size: 200%;
+   color: red;
+    position: absolute;
+    top: 0;
+    left: 45vw;
+}
+
+main>section:nth-child(4)>div:nth-child(2){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30vh;
+    height: 60vh;
+
+}
+
+main>section:nth-child(4)>div>aside{
+    margin-right: 15px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#imgPos{
+    position: relative;
+    border-radius: 20px;
+    bottom: 20vh;
+}
+
+
+main>section:nth-child(4)>div:nth-child(3){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 32vh;
+    height: 60vh;
+
+
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside{
+    margin-right: 15px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(1){
+    background: url("../gallery/young-woman-working-home-office-260nw-1690509229.webp");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(2){
+    background: url("../gallery/Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(3){
+    background: url("../gallery/images (1).jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){
+    background: url("../gallery/images (2).jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(2){
+    background: url("../gallery/istockphoto-613241758-170667a.jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(3){
+    background: url("../gallery/istockphoto-958126934-170667a.jpg");
+    background-position: center ;
+    background-size:cover ;
+}
+
+
+
+
+/*---------------------------Skills-------------------------------------*/
+
+
+main>section:nth-child(5){
+
+    height: 150vh;
+}
+
+main>section:nth-child(5)>h2:nth-child(1){ /*skills*/
+    position: relative;
+    top: 220px;
+    left: 50%;
+    display: inline-block;
+    font-size: 200%;
+    color: red;
+}
+
+main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Languages and Tools*/
+    position: relative;
+    top: 280px;
+    left: 260px;
+    display: inline-block;
+
+    letter-spacing: 3px;
+    font-size: 40px;
+
+}
+
+main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
+    font-size: 16px;
+    top: 295px;
+
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3){   /*container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 30%;
+    position: relative;
+    height: 170px;
+
+
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div{ /*item*/
+
+    row-gap: 2px;
+    column-gap: 2px;
+    position: relative;
+    left: 220px;
+    top: 300px;
+    height: 180px;
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div>img {
+    position: relative;
+    left: 25%;
+    border-radius: 20px;
+    border: solid  0.001cm;
+    border-left-color: #131312;
+    border-right-color:red;
+    border-bottom-color: red;
+    border-top-color: #131312;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+
+}
+
+main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 33px;
+
+    font-size: 19px;
+}
+
+
+
+/*-------------------------projects--------------------------*/
+
+main>section:nth-child(6){
+    position: relative;
+}
+
+
+main>section:nth-child(6)>h2:nth-child(1){
+    font-size: 200%;
+
+    display: inline-block;
+    position: relative;
+    left: 45%;
+}
+
+main>section:nth-child(6)>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr  1fr;
+    width: 65%;
+    position: relative;
+    left: 19%;
+    top: 10vh;
+
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside{
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
+    position: relative;
+    left: 4%;
+    bottom: 31%;
+    color: #ffb400;
+
+
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
+    position: relative;
+    left: 4%;
+    bottom: 35%;
+
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.projects{
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+/*---------------------------services-------------------------------------*/
+
+main>section:nth-child(7){
+    position: relative;
+    height: 120vh;
+}
+
+main>section:nth-child(7)>h2:nth-child(2){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    font-size: 200%;
+
+}
+
+main>section:nth-child(7)>h1:nth-child(3){
+    position: relative;
+    left: 18%;
+    top: 18%;
+    display: inline-block;
+
+    letter-spacing: 2px;
+}
+
+main>section:nth-child(7)>div:nth-child(4){
+    display: flex;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    top: 22%;
+}
+
+main>section:nth-child(7)>div:nth-child(4)>aside{
+    border-radius: 15px ;
+    border: 1px solid white;
+    height: 56vh;
+    width: 20vw;
+    position: relative;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    min-width: 280px;
+}
+
+main>section:nth-child(7)>div:nth-child(4)>aside>img{
+    position: relative;
+    display: inline-block;
+    left: 40%;
+    top: 15%;
+}
+
+main>section:nth-child(7)>div:nth-child(4)>aside>h4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 18%;
+
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: #ffb400;
+
+}
+
+main>section:nth-child(7)>div:nth-child(4)>aside>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+
+    font-size: 18px;
+    margin: 20px;
+
+
+}
+
+main>section:nth-child(7)>div:nth-child(1){
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 10vw;
+    top: 63vh;
+    border-radius: 100%;
+    background: #ffb400;
+    z-index: -1;
+    filter: blur(200px);
+}
+
+
+/*---------------------------Assigment-------------------------------------*/
+
+
+
+main>section:nth-child(8){
+    height: 110vh;
+}
+
+main>section:nth-child(8)>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    position: relative;
+    top: 40vh;
+    width: 65vw;
+    margin: auto;
+    overflow: hidden;
+    overflow-x:scroll;
+    scroll-padding: 24px;
+    justify-content: start;
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside{
+    border-radius: 15px ;
+    border: 1px solid white;
+    height: 56vh;
+    width: 31%;
+    position: relative;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    margin: 12px;
+    min-width: 257px;
+
+
+}
+
+main>section:nth-child(8)>h2:nth-child(1){
+    position: relative;
+    display: flex;
+    top: 20vh;
+    justify-content: center;
+    font-size:200%;
+   color: red;
+
+
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>img{
+    position: relative;
+    top: 15%;
+    left: 40%;
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside>h3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 19%;
+
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+
+
+main>section:nth-child(8)>div:nth-child(2)>aside>p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 25%;
+
+    font-size: 18px;
+    margin: 20px;
+}
+
+main>section:nth-child(8)>aside:nth-child(3){
+    position: relative;
+    width: 15vw;
+    height: 25vh;
+    left: 70vw;
+    bottom: 450px;
+    border-radius: 100%;
+    background: #1746EC;
+    filter: blur(200px);
+}
+
+
+
+/*---------------------------contact me-------------------------------------*/
+
+footer{
+    position: relative;
+    bottom: 650px;
+}
+
+
+footer>section:nth-child(1){
+    position: relative;
+}
+
+
+#ContactMe{
+    position: relative;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+
+
+}
+
+
+footer>section:nth-child(1)>aside:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
+    position: relative;
+    left: 15vw;
+    top: 40vh;
+    display: inline-block;
+
+
+}
+
+footer>section:nth-child(1)>aside:nth-child(2)>div>img{
+    position: relative;
+    left: 14vw;
+    top: 40vh;
+}
+
+
+
+footer>section:nth-child(2)>form{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    width: 41vw;
+    gap: 10px;
+    position: relative;
+    left: 41vw;
+    bottom: 1vh;
+
+
+
+}
+
+footer>section:nth-child(2)>form>textarea {
+    position: relative;
+    width: 202%;
+}
+
+footer>section:nth-child(2)>form>input{
+    height: 6vh;
+    border-radius: 10px;  /*key bord input radius*/
+    border: solid white 1px;
+    background-color: transparent;
+
+}
+
+
+
+#btnSubmit{
+    position: relative;
+    bottom: -0.1vh;
+    left: 41.1vw;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border-radius: 15px;
+    border: solid white 1px;
+
+
+}
+#btnCv{
+    position: relative;
+    bottom: 0;
+    left: 41.5vw;
+    border-radius: 15px;
+    border: solid white 1px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background: transparent;
+}
+
+
+
+
+
+li::marker{     /*remove indexing in menu*/
+    content: "";
+}
+
+
+*{
+    color:white;  /* all texts been white */
+
+}
+
+h2{       /*  heades colors to yellow*/
+    color: red;
+}
+
+
+
+textarea{
+    background-color: transparent; /* input text area dtyles */
+    border-radius: 10px;
+    border-color: white;
+
+
+}
+
