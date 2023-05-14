@@ -11,7 +11,8 @@ html{
 body{
     height:  100vh;
     width: 99vw;
-    background-color:black;   /*  bodey clor to black*/
+    background-color:white;   /*  bodey clor to black*/
+
     overflow-x: hidden;
 
 }
@@ -19,17 +20,15 @@ body{
 
 
 
-body>section:nth-child(1){
-    height:  100vh;
-    width: 98vw;
-    background:gray;
-    border-radius: 20px;
-    margin-top: 5px;
-    margin-left: 5px;
-    overflow: hidden;
-
-
-}
+/*body>section:nth-child(1){*/
+/*    height:  100vh;*/
+/*    width: 98vw;*/
+/*    background:gray;*/
+/*    border-radius: 20px;*/
+/*    margin-top: 5px;*/
+/*    margin-left: 5px;*/
+/*    overflow: hidden;*/
+/*}*/
 
 body>section:nth-child(2){
     position: absolute;
@@ -52,7 +51,7 @@ header{
 
 
 header:hover{
-    background: black;
+    background: white;
 }
 
 /*header>nav>aside>img{   */
@@ -79,160 +78,272 @@ header>nav>li{             /*menu*/
 }
 
 a{
-    font-family: Arial,Helvetica,sans-serif;
+    /*font-family: Arial,Helvetica,sans-serif;*/
     font-size: 100%;
+    color: black;
     text-decoration: none;
 
 }
 /*------------------------Main Home Page--------------------------*/
 
-
-main{
-    overflow-x: hidden;
+/*//////////////////////////////////////////////*/
+main > section:nth-child(1) {
+    width: 96vw;
+    padding: 20px;
+    overflow: hidden;
 }
 
-main>section:first-child{
-    position: absolute;
-    top: 22vh;
-    left: 6vw;
-}
-
-
-main>section:first-child>h2{        /*hellow i am*/
-   color: black;
-    font-size: 2.8rem;
+main > section:first-child > section:first-child {
     position: relative;
-    top: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    background:indianred;
+    border-radius: 20px;
+    margin-left: 5px;
 }
 
-main>section:first-child>h1{          /*malsha*/
+main > section:first-child > section:first-child > div:first-child {
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
 
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h2:first-child {
+    color: black;
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) {
+    margin-top: 16px;
+    margin-bottom: 0;
     font-weight: bold;
     font-size: 60px;
-    margin:auto;
-    position: relative;
-    top: 10vh;
-
-
-
+    color: black;
 }
-main>section:first-child>div:nth-child(3){  /*main png*/
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
     position: relative;
-    width: 400px;
-    height: 400px;
-    left: 50vw;
-    border-radius: 100%;
-    bottom: 20vh;
-    background: url("../img/photo_2023-03-16_08-39-53.jpg");
+    display: flex;
+    flex-direction: column;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(3) > nav {
+    margin-top: 4rem;
+    display: flex;
+    gap: 10px;
+}
+
+main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+    background: url(../img/Ellipse2.png);
+    width: 447px;
+    height: 450px;
     background-size: cover;
-    background-position: center;
-    display: inline-block;
-    /*width: 26vw;*/
-    /*height: 53vh;*/
-}
-
-
-
-main>section>article{
-
-    letter-spacing: 1px;
-    font-size: 25px;
     position: relative;
-    bottom: 35vh;
+    bottom: 18px;
 }
 
+/*/////////////////////////////////////////////////////////*/
 
-main>section:nth-child(1)>nav{           /*soceal meadia*/
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
-    height: 10rem;
-    margin: -1rem 1rem 4rem 0;
-    position: relative;
-    bottom: 35vh;
-    left: 1.5vw;
+/*main{*/
+/*    overflow-x: hidden;*/
+/*}*/
 
-
-}
-
-main>section>nav>img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-    rgba(255, 255, 255, 0.2);
-}
+/*main>section:first-child{*/
+/*    position: absolute;*/
+/*    top: 22vh;*/
+/*    left: 6vw;*/
+/*}*/
 
 
-main>section>nav>div{
-    margin-right: 0.5rem;
+/*main>section:first-child>h2{        !*hellow i am*!*/
+/*   color: black;*/
+/*    font-size: 2.8rem;*/
+/*    position: relative;*/
+/*    top: 11vh;*/
+/*}*/
 
-}
+/*main>section:first-child>h1{          !*malsha*!*/
+
+/*    font-weight: bold;*/
+/*    font-size: 60px;*/
+/*    margin:auto;*/
+/*    position: relative;*/
+/*    top: 10vh;*/
+
+
+
+/*}*/
+/*main>section:first-child>div:nth-child(3){  !*main png*!*/
+/*    position: relative;*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    left: 50vw;*/
+/*    border-radius: 100%;*/
+/*    bottom: 20vh;*/
+/*    background: url("../img/photo_2023-03-16_08-39-53.jpg");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    display: inline-block;*/
+/*    !*width: 26vw;*!*/
+/*    !*height: 53vh;*!*/
+/*}*/
+
+
+
+/*main>section>article{*/
+
+/*    letter-spacing: 1px;*/
+/*    font-size: 25px;*/
+/*    position: relative;*/
+/*    bottom: 35vh;*/
+/*}*/
+
+
+/*main>section:nth-child(1)>nav{           !*soceal meadia*!*/
+/*    display: inline-flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 9rem;*/
+/*    height: 10rem;*/
+/*    margin: -1rem 1rem 4rem 0;*/
+/*    position: relative;*/
+/*    bottom: 35vh;*/
+/*    left: 1.5vw;*/
+
+
+/*}*/
+
+/*main>section>nav>img{*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0*/
+/*    rgba(255, 255, 255, 0.2);*/
+/*}*/
+
+
+/*main>section>nav>div{*/
+/*    margin-right: 0.5rem;*/
+
+/*}*/
 
 
 
 /*------------------------About me page--------------------------*/
 
+/*////////////////////////////////////////////////*/
+main > section:nth-child(2) > section:first-child {
+    position: relative;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
 
+main > section:nth-child(2) > section:first-child > div:first-child {
+    width: 1100px;
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 35px;
+}
 
-main>section:nth-child(2)>aside>h2{     /*about me*/
-    position: absolute;
-    left: 20.5%;
-    bottom: -25%;
+main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(1) > div {
+    background: url(../img/Ellipse2.png);
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
+    position: relative;
+    bottom: 18px;
+}
+
+main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(1) > h2 {
     font-size: 200%;
     color: red;
-
-
-}
-
-main>section:nth-child(2)>aside>img{  /*about me img*/
-    position: relative;
-    left: 20vw;
-    top: 25vh;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
     text-align: center;
-    border-radius: 15px;
-
+    padding-bottom: 21px;
 }
 
-main>section:nth-child(2)>div{
-    position: relative;
-    width: 12vw;
-    height: 15vh;
-    left: 25vw;
-    top: -60vh;
-    border-radius: 100%;
-    background: red;
-    z-index: -1;
-    filter: blur(200px);
-
-}
-
-
-main>section:nth-child(2)>aside:nth-child(2){
-    position: relative;
-    display: inline-block;
-    left: 44%;
-    top: -25vh;
-}
-
-main>section:nth-child(2)>aside:nth-child(2)>p:first-child{
+main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:first-child {
     font-size:200%;
+    color: black;
     font-weight: bold;
-
-
 }
 
-main>section:nth-child(2)>aside:nth-child(2)>p:last-child{
-
+main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:last-child {
     font-size: 150%;
+    color: black; /**/
 }
 
-/*---------------------------aducation-------------------------------------*/
+/*/////////////////////////////////////////////////*/
+/*main>section:nth-child(2)>aside>h2{     !*about me*!*/
+/*    position: absolute;*/
+/*    left: 20.5%;*/
+/*    bottom: -25%;*/
+/*    font-size: 200%;*/
+/*    color: red;*/
+
+
+/*}*/
+
+/*main>section:nth-child(2)>aside>img{  !*about me img*!*/
+/*    position: relative;*/
+/*    left: 20vw;*/
+/*    top: 25vh;*/
+/*    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);*/
+/*    text-align: center;*/
+/*    border-radius: 15px;*/
+
+/*}*/
+
+/*main>section:nth-child(2)>div{*/
+/*    position: relative;*/
+/*    width: 12vw;*/
+/*    height: 15vh;*/
+/*    left: 25vw;*/
+/*    top: -60vh;*/
+/*    border-radius: 100%;*/
+/*    background: red;*/
+/*    z-index: -1;*/
+/*    filter: blur(200px);*/
+
+/*}*/
+
+
+/*main>section:nth-child(2)>aside:nth-child(2){*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    left: 44%;*/
+/*    top: -25vh;*/
+/*}*/
+
+/*main>section:nth-child(2)>aside:nth-child(2)>p:first-child{*/
+/*    font-size:200%;*/
+/*    font-weight: bold;*/
+
+
+/*}*/
+
+/*main>section:nth-child(2)>aside:nth-child(2)>p:last-child{*/
+
+/*    font-size: 150%;*/
+/*}*/
+
+/*---------------------------educaton-------------------------------------*/
 
 
 main>section:nth-child(3){
     position: relative;
     width: 99vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -265,7 +376,9 @@ main>section:nth-child(3)>div{
 
 main>section:nth-child(3)>div>aside {
     width: 30vw;
+
     font-size: 20px;
+    color: black;
     position: relative;
     left: 7%;
     bottom: 150px;
@@ -284,7 +397,7 @@ main>section:nth-child(4){
 
 main>section:nth-child(4)>h2{
     font-size: 200%;
-   color: red;
+    color: red;
     position: absolute;
     top: 0;
     left: 45vw;
@@ -397,6 +510,7 @@ main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Languages and Tools*/
 
 main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
     font-size: 16px;
+    color: black;/**/
     top: 295px;
 
 
@@ -446,6 +560,7 @@ main>section:nth-child(5)>aside:nth-child(3)>div>h6 {
     bottom: 33px;
 
     font-size: 19px;
+    color: black;/**/
 }
 
 
@@ -459,6 +574,7 @@ main>section:nth-child(6){
 
 main>section:nth-child(6)>h2:nth-child(1){
     font-size: 200%;
+    color: black;/**/
     display: inline-block;
     position: relative;
     left: 45%;
@@ -495,6 +611,7 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
     left: 4%;
     bottom: 35%;
     font-size: 25px;
+    color: black;/**/
     letter-spacing: 1px;
 }
 
@@ -508,6 +625,7 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
 main>section:nth-child(7){
     position: relative;
     height: 120vh;
+
 }
 
 main>section:nth-child(7)>h2:nth-child(2){
@@ -516,6 +634,7 @@ main>section:nth-child(7)>h2:nth-child(2){
     justify-content: center;
     top: 10%;
     font-size: 200%;
+    color: red;/**/
 
 }
 
@@ -538,7 +657,7 @@ main>section:nth-child(7)>div:nth-child(4){
 
 main>section:nth-child(7)>div:nth-child(4)>aside{
     border-radius: 15px ;
-    border: 1px solid white;
+    border: 1px solid black;
     height: 56vh;
     width: 20vw;
     position: relative;
@@ -556,12 +675,13 @@ main>section:nth-child(7)>div:nth-child(4)>aside>img{
 main>section:nth-child(7)>div:nth-child(4)>aside>h4{
     position: relative;
     display: flex;
+    color: black;
     justify-content: center;
     top: 18%;
-
     letter-spacing: 1px;
     font-size: 25px;
-    color: #ffb400;
+    /*color: black;!**!*/
+    /*color: #ffb400;*/
 
 }
 
@@ -572,6 +692,7 @@ main>section:nth-child(7)>div:nth-child(4)>aside>p{
     top: 25%;
 
     font-size: 18px;
+    color: black;/**/
     margin: 20px;
 
 
@@ -584,7 +705,8 @@ main>section:nth-child(7)>div:nth-child(1){
     left: 10vw;
     top: 63vh;
     border-radius: 100%;
-    background: #ffb400;
+    /*background: #ffb400;*/
+    background: red;
     z-index: -1;
     filter: blur(200px);
 }
@@ -633,7 +755,7 @@ main>section:nth-child(8)>h2:nth-child(1){
     top: 20vh;
     justify-content: center;
     font-size:200%;
-   color: red;
+    color: red;
 
 
 }
@@ -652,6 +774,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside>h3{
 
     letter-spacing: 1px;
     font-size: 25px;
+    color: black;/**/
 }
 
 
@@ -663,6 +786,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside>p{
     top: 25%;
 
     font-size: 18px;
+    color: black;/**/
     margin: 20px;
 }
 
@@ -698,6 +822,7 @@ footer>section:nth-child(1){
     display: flex;
     justify-content: center;
     font-size: 200%;
+    color: red;/**/
 
 
 }
@@ -782,13 +907,13 @@ footer>section:nth-child(2)>form>input{
 
 
 
-li::marker{     /*remove indexing in menu*/
-    content: "";
-}
+/*li::marker{     !*remove indexing in menu*!*/
+/*    content: "";*/
+/*}*/
 
 
 *{
-    color:white;  /* all texts been white */
+    color: black; /* all texts been white */
 
 }
 

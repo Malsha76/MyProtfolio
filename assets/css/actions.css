@@ -1,0 +1,128 @@
+
+
+    ::-webkit-scrollbar-thumb {
+        background:red;
+
+    }
+
+
+
+a:hover{
+    color: red;
+    font-weight: bold;
+
+}
+
+
+/*gallery*/
+
+.imgs{
+    transition: .35s;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    background: red;
+
+}
+
+.hoverImg:hover>:not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+/*---Skills */
+
+
+main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
+    transform: scale(1.5);
+}
+
+/*---project ---*/
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div{
+    width: 85%;
+    height: 80%;
+    top:100%;
+    right: 3%;
+    position: absolute;
+    background: linear-gradient(#1f3d4738, black);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 1.5s;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside:hover div{
+    top: 0;
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div>h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+
+
+
+}
+
+main>section:nth-child(6)>div:nth-child(2)>aside>div>p{
+
+}
+
+/*---Assignment ---*/
+
+
+main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar {
+    height: 5px;
+
+}
+
+main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-track {
+
+}
+
+main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+}
+
+main > section:nth-child(8) > div:nth-child(2)::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/*servies*/
+
+main>section:nth-child(7)>div:nth-child(4)>aside:hover {
+    transition: 2s;
+}
+main>section:nth-child(7)>div:nth-child(4)>aside:hover {
+    box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
+    transition: 2s;
+}
+
+main>section:nth-child(7)>div:nth-child(4)>aside:hover>:not(:hover) {
+    transition: 2s;
+    transform: scale(.9);
+
+}
+
+
+/*ser-*!*/
+
+
+main>section:nth-child(8)>div:nth-child(2)>aside {
+    transition: 2s;
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside:hover {
+    box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
+    box-shadow: red;
+    transition: 2s;
+}
+
+main>section:nth-child(8)>div:nth-child(2)>aside:hover>:not(:hover) {
+    transition: 2s;
+    transform: scale(.9);
+
+}
+
