@@ -459,7 +459,6 @@ main>section:nth-child(6){
 
 main>section:nth-child(6)>h2:nth-child(1){
     font-size: 200%;
-
     display: inline-block;
     position: relative;
     left: 45%;
@@ -495,7 +494,6 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
     position: relative;
     left: 4%;
     bottom: 35%;
-
     font-size: 25px;
     letter-spacing: 1px;
 }
