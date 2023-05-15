@@ -116,7 +116,7 @@ main > section:first-child > section:first-child {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    background:indianred;
+    background:darkgray;
     border-radius: 20px;
     margin-left: 5px;
 }
@@ -277,11 +277,11 @@ main > section:nth-child(2) > section:first-child > div:first-child {
 }
 
 main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(1) > div {
-    background: url(../img/Ellipse2.png);
+    background: url(../gallery/photo_2023-05-15_13-12-38.jpg);
     width: 250px;
-    height: 250px;
+    height: 350px;
     background-size: cover;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 10px 1px indianred;
     /*box-shadow: 0px 0px 10px 10px #ff253a;*/
     position: relative;
     bottom: 18px;
@@ -436,7 +436,7 @@ main>section:nth-child(4)>div:nth-child(2){
 
 main>section:nth-child(4)>div>aside{
     margin-right: 15px;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px 1px indianred;
     border-radius: 20px;
 }
 
@@ -459,7 +459,8 @@ main>section:nth-child(4)>div:nth-child(3){
 
 main>section:nth-child(4)>div:nth-child(3)>aside{
     margin-right: 15px;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 10px 1px palevioletred;
+    /*box-shadow: 0px 0px 50px 30px indianred;*/
 
 }
 
@@ -766,7 +767,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     width: 31%;
     position: relative;
     /*box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);*/
-    box-shadow: 0px 0px 10px 10px grey;
+    box-shadow: 0px 0px 10px 10px black;
     flex-shrink: 0;
     margin: 12px;
     min-width: 257px;
