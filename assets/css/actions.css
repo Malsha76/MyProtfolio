@@ -1,7 +1,7 @@
 
 
     ::-webkit-scrollbar-thumb {
-        background:red;
+        background:darkred;
 
     }
 
@@ -118,7 +118,7 @@ main>section:nth-child(8)>div:nth-child(2)>aside {
 
 main>section:nth-child(8)>div:nth-child(2)>aside:hover {
     /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
-    box-shadow: 0px 0px 10px 10px indianred;
+    box-shadow: 0px 0px 10px 10px black;
     /*box-shadow: red;*/
     transition: 2s;
 }
