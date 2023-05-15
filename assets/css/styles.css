@@ -30,16 +30,33 @@ body{
 /*    overflow: hidden;*/
 /*}*/
 
-body>section:nth-child(2){
+/*body>section:nth-child(2){*/ /*ori*/
+/*    position: absolute;*/
+/*    width: 20vw;*/
+/*    height: 50vh;*/
+/*    left: 70vw;*/
+/*    top: -4px;*/
+/*    border-radius: 100%;*/
+/*    background: #1746EC;*/
+/*    filter: blur(300px);*/
+/*}*/
+
+
+body>section:nth-child(2) {
+    width: 85%;
+    height: 80%;
+    top: 0%;
+    right: 3%;
     position: absolute;
-    width: 20vw;
-    height: 50vh;
-    left: 70vw;
-    top: -4px;
-    border-radius: 100%;
-    background: #1746EC;
-    filter: blur(300px);
+    background:white;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 1.5s;
 }
+
+
+
 
 header{
     height: 10%;
@@ -104,6 +121,7 @@ main > section:first-child > section:first-child {
     margin-left: 5px;
 }
 
+/*order*/
 main > section:first-child > section:first-child > div:first-child {
     display: flex;
     gap: 66px;
@@ -134,12 +152,15 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
     flex-direction: column;
 }
 
+/* icons*/
 main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(3) > nav {
     margin-top: 4rem;
     display: flex;
     gap: 10px;
 }
 
+
+/*img*/
 main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
     background: url(../img/Ellipse2.png);
     width: 447px;
@@ -251,7 +272,7 @@ main > section:nth-child(2) > section:first-child > div:first-child {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom:0px;
     margin-top: 35px;
 }
 
@@ -261,6 +282,7 @@ main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth
     height: 250px;
     background-size: cover;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0px 0px 10px 10px #ff253a;*/
     position: relative;
     bottom: 18px;
 }
@@ -273,13 +295,13 @@ main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth
 }
 
 main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:first-child {
-    font-size:200%;
+    font-size:180%; /* I can design*/
     color: black;
     font-weight: bold;
 }
 
 main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:last-child {
-    font-size: 150%;
+    font-size: 130%;
     color: black; /**/
 }
 
@@ -510,6 +532,7 @@ main>section:nth-child(5)>aside:nth-child(2)>h1{ /*Languages and Tools*/
 
 main>section:nth-child(5)>aside:nth-child(2)>h1:nth-child(1){
     font-size: 16px;
+    /*display: flex;!**!!**!*/
     color: black;/**/
     top: 295px;
 
@@ -574,7 +597,7 @@ main>section:nth-child(6){
 
 main>section:nth-child(6)>h2:nth-child(1){
     font-size: 200%;
-    color: black;/**/
+    color: red;/**/
     display: inline-block;
     position: relative;
     left: 45%;
@@ -601,7 +624,7 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
     position: relative;
     left: 4%;
     bottom: 31%;
-    color: #ffb400;
+    color: red;
 
 
 }
@@ -616,7 +639,8 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
 }
 
 .projects{
-    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0px 0px 50px 30px indianred;
     border-radius: 15px;
 }
 
@@ -741,7 +765,8 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     height: 56vh;
     width: 31%;
     position: relative;
-    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);*/
+    box-shadow: 0px 0px 10px 10px grey;
     flex-shrink: 0;
     margin: 12px;
     min-width: 257px;
@@ -797,7 +822,7 @@ main>section:nth-child(8)>aside:nth-child(3){
     left: 70vw;
     bottom: 450px;
     border-radius: 100%;
-    background: #1746EC;
+    background: indianred;
     filter: blur(200px);
 }
 

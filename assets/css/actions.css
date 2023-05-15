@@ -8,7 +8,7 @@
 
 
 a:hover{
-    color: red;
+    color: darkred;
     font-weight: bold;
 
 }
@@ -20,6 +20,7 @@ a:hover{
     transition: .35s;
     cursor: pointer;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    /*box-shadow: 0px 0px 10px 10px #ff253a;*/
     background: red;
 
 }
@@ -44,7 +45,7 @@ main>section:nth-child(6)>div:nth-child(2)>aside>div{
     top:100%;
     right: 3%;
     position: absolute;
-    background: linear-gradient(#1f3d4738, black);
+    background: linear-gradient(indianred, gray);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 30px;
@@ -97,6 +98,7 @@ main>section:nth-child(7)>div:nth-child(4)>aside:hover {
 }
 main>section:nth-child(7)>div:nth-child(4)>aside:hover {
     box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
+    /*box-shadow: 0px 0px 10px 10px #ff253a;*/
     transition: 2s;
 }
 
@@ -115,8 +117,9 @@ main>section:nth-child(8)>div:nth-child(2)>aside {
 }
 
 main>section:nth-child(8)>div:nth-child(2)>aside:hover {
-    box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);
-    box-shadow: red;
+    /*box-shadow: 10px 10px 10px 1px rgba(238, 190, 23, 0.4);*/
+    box-shadow: 0px 0px 10px 10px indianred;
+    /*box-shadow: red;*/
     transition: 2s;
 }
 
