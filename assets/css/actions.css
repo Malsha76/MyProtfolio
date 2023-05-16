@@ -39,18 +39,18 @@ main>section:nth-child(5)>aside:nth-child(3)>div>img:hover {
 
 /*---project ---*/
 
-/*main>section:nth-child(6)>div:nth-child(2)>aside>div{*/
-/*    width: 85%;*/
-/*    height: 80%;*/
-/*    top:100%;*/
-/*    right: 3%;*/
-/*    position: absolute;*/
-/*    background: linear-gradient(indianred, lavender);*/
-/*    backdrop-filter: blur(5px);*/
-/*    border-radius: 15px;*/
-/*    padding: 30px;*/
-/*    transition: 1.5s;*/
-/*}*/
+main>section:nth-child(6)>div:nth-child(2)>aside>div{
+    width: 85%;
+    height: 80%;
+    top:100%;
+    right: 3%;
+    position: absolute;
+    background: linear-gradient(indianred, lavender);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 1.5s;
+}
 
 main>section:nth-child(6)>div:nth-child(2)>aside:hover div{
     top: 0;
