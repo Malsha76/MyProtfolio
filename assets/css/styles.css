@@ -116,7 +116,7 @@ main > section:first-child > section:first-child {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    background:darkgray;
+    background:pink;
     border-radius: 20px;
     margin-left: 5px;
 }
@@ -162,7 +162,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > s
 
 /*img*/
 main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
-    background: url(../img/Ellipse2.png);
+    background: url(../gallery/my2.jpg);
     width: 447px;
     height: 450px;
     background-size: cover;
@@ -256,108 +256,191 @@ main > section:first-child > section > div:first-child > aside:nth-child(2) > di
 
 /*------------------------About me page--------------------------*/
 
-/*////////////////////////////////////////////////*/
-main > section:nth-child(2) > section:first-child {
+main > section:nth-child(2) {
     position: relative;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    width: 100%;
+    /*background: rgba(236, 240, 243, 0.4);*/
+    background: white;
 }
 
-main > section:nth-child(2) > section:first-child > div:first-child {
+/**
+* title in about section
+*/
+main > section:nth-child(2) > section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+
+main > section:nth-child(2) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+
+/**
+* first butterfly  in about section
+*/
+main > section:nth-child(2) > div:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 100px;
+    top: 50px;
+}
+
+
+/**
+* about description in about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
+    width: 667px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+* description title in about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > h2:first-child {
+
+    font-size: 25px;
+    color: black;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 24px;
+
+
+}
+
+/**
+* introducing description in about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #9494A1 !important;
+    margin-top: 0;
+}
+
+/**
+* butterfly png in about section
+*/
+#aboutLineCircle {
+    position: absolute;
+    width: 114px;
+    height: 157px;
+    fill: none;
+    right: 0;
+    bottom: 25px;
+}
+
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) {
+    position: relative;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**
+* my details column 1 titles customized about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
+    font-size: 17px;
+    color: var(--text-black-900) !important;
+}
+
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
+    color: var(--text-black-700) !important;
+}
+
+/**
+* my details column 2 titles customized about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
+    font-size: 17px;
+    color: var(--text-black-900) !important;
+}
+
+
+/* introduced my details column 2 position about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 {
+    position: absolute;
+    right: 0;
+}
+
+/**
+* my details column 2 span customized about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
+    color: var(--text-black-700) !important;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
+    position: relative;
+    top: 16px;
+    margin-bottom: 65px;
+}
+
+/**
+* description section button position about section
+*/
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
+    width: 209px;
+    height: 46px;
+    background-color: #464444;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);
+    border-radius: 25px;
+    text-align: left;
+    padding-left: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-width: 0;
+}
+
+
+main > section:nth-child(2) > section:nth-child(3) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div:first-child {
     width: 1100px;
     display: flex;
-    gap: 66px;
+    gap: 92px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom:0px;
-    margin-top: 35px;
+    margin-left: 67px;
+    margin-right: 67px;
+    transition: all 2s;
 }
 
-main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(1) > div {
-    background: url(../gallery/photo_2023-05-15_13-12-38.jpg);
-    width: 250px;
-    height: 350px;
-    background-size: cover;
-    box-shadow: 10px 10px 10px 1px indianred;
-    /*box-shadow: 0px 0px 10px 10px #ff253a;*/
-    position: relative;
-    bottom: 18px;
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(6) {
+    display: none;
 }
 
-main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(1) > h2 {
-    font-size: 200%;
-    color: red;
-    text-align: center;
-    padding-bottom: 21px;
+main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
+    display: none;
 }
 
-main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:first-child {
-    font-size:180%; /* I can design*/
-    color: black;
-    font-weight: bold;
-}
-
-main > section:nth-child(2) > section:first-child  > div:first-child > aside:nth-child(2)>p:last-child {
-    font-size: 130%;
-    color: black; /**/
-}
-
-/*/////////////////////////////////////////////////*/
-/*main>section:nth-child(2)>aside>h2{     !*about me*!*/
-/*    position: absolute;*/
-/*    left: 20.5%;*/
-/*    bottom: -25%;*/
-/*    font-size: 200%;*/
-/*    color: red;*/
-
-
-/*}*/
-
-/*main>section:nth-child(2)>aside>img{  !*about me img*!*/
-/*    position: relative;*/
-/*    left: 20vw;*/
-/*    top: 25vh;*/
-/*    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.4);*/
-/*    text-align: center;*/
-/*    border-radius: 15px;*/
-
-/*}*/
-
-/*main>section:nth-child(2)>div{*/
-/*    position: relative;*/
-/*    width: 12vw;*/
-/*    height: 15vh;*/
-/*    left: 25vw;*/
-/*    top: -60vh;*/
-/*    border-radius: 100%;*/
-/*    background: red;*/
-/*    z-index: -1;*/
-/*    filter: blur(200px);*/
-
-/*}*/
-
-
-/*main>section:nth-child(2)>aside:nth-child(2){*/
-/*    position: relative;*/
-/*    display: inline-block;*/
-/*    left: 44%;*/
-/*    top: -25vh;*/
-/*}*/
-
-/*main>section:nth-child(2)>aside:nth-child(2)>p:first-child{*/
-/*    font-size:200%;*/
-/*    font-weight: bold;*/
-
-
-/*}*/
-
-/*main>section:nth-child(2)>aside:nth-child(2)>p:last-child{*/
-
-/*    font-size: 150%;*/
-/*}*/
 
 /*---------------------------educaton-------------------------------------*/
 
@@ -379,6 +462,7 @@ main>section:nth-child(3)>h2{
 }
 
 main>section:nth-child(3)>aside:nth-child(2) {
+
     display: flex;
     justify-content: center;
     gap: 40vw;
@@ -389,6 +473,7 @@ main>section:nth-child(3)>aside:nth-child(2) {
 
 
 main>section:nth-child(3)>div{
+
     display: flex;
     justify-content: center;
     gap: 15vw;
@@ -398,7 +483,6 @@ main>section:nth-child(3)>div{
 
 main>section:nth-child(3)>div>aside {
     width: 30vw;
-
     font-size: 20px;
     color: black;
     position: relative;
@@ -465,37 +549,37 @@ main>section:nth-child(4)>div:nth-child(3)>aside{
 }
 
 main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(1){
-    background: url("../gallery/young-woman-working-home-office-260nw-1690509229.webp");
+    background: url("../gallery/dog1.jpg");
     background-position: center ;
     background-size:cover ;
 }
 
 main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(2){
-    background: url("../gallery/Gutenberg_Bible,_Lenox_Copy,_New_York_Public_Library,_2009._Pic_01.jpg");
+    background: url("../gallery/cam1.jpg");
     background-position: center ;
     background-size:cover ;
 }
 
 main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(3){
-    background: url("../gallery/images (1).jpg");
+    background: url("../gallery/cae1.jpg ");
     background-position: center ;
     background-size:cover ;
 }
 
 main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){
-    background: url("../gallery/images (2).jpg");
+    background: url("../gallery/rose1.jpg");
     background-position: center ;
     background-size:cover ;
 }
 
 main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(2){
-    background: url("../gallery/istockphoto-613241758-170667a.jpg");
+    background: url("../gallery/sky1.jpg");
     background-position: center ;
     background-size:cover ;
 }
 
 main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(3){
-    background: url("../gallery/istockphoto-958126934-170667a.jpg");
+    background: url("../gallery/drink1.jpg");
     background-position: center ;
     background-size:cover ;
 }
@@ -761,8 +845,9 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     height: 56vh;
     width: 31%;
     position: relative;
+    box-shadow: 0px 0px 50px 30px indianred;
     /*box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.5);*/
-    box-shadow: 0px 0px 10px 10px black;
+    /*box-shadow: 0px 0px 10px 10px black;*/
     flex-shrink: 0;
     margin: 12px;
     min-width: 257px;
