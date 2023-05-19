@@ -1,23 +1,18 @@
-
-
-
 /*------------------------hedder--------------------------*/
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
-body{
-    height:  100vh;
+body {
+    height: 100vh;
     width: 99vw;
-    background-color:white;   /*  bodey clor to black*/
+    background-color: white; /*  bodey clor to black*/
 
     overflow-x: hidden;
 
 }
-
-
 
 
 /*body>section:nth-child(1){*/
@@ -42,13 +37,13 @@ body{
 /*}*/
 
 
-body>section:nth-child(2) {
+body > section:nth-child(2) {
     width: 85%;
     height: 80%;
     top: 0%;
     right: 3%;
     position: absolute;
-    background:white;
+    background: white;
     backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 30px;
@@ -56,9 +51,7 @@ body>section:nth-child(2) {
 }
 
 
-
-
-header{
+header {
     height: 10%;
     width: 98vw;
     position: fixed;
@@ -67,7 +60,7 @@ header{
 }
 
 
-header:hover{
+header:hover {
     background: white;
 }
 
@@ -78,14 +71,14 @@ header:hover{
 
 /*}*/
 
-header>nav{
+header > nav {
 
     width: 90%;
     position: relative;
     display: inline-block;
 }
 
-header>nav>li{             /*menu*/
+header > nav > li { /*menu*/
     display: inline-block;
     position: relative;
     left: 55%;
@@ -94,13 +87,14 @@ header>nav>li{             /*menu*/
     transition: all 0.1s ease-in;
 }
 
-a{
+a {
     /*font-family: Arial,Helvetica,sans-serif;*/
     font-size: 100%;
     color: black;
     text-decoration: none;
 
 }
+
 /*------------------------Main Home Page--------------------------*/
 
 /*//////////////////////////////////////////////*/
@@ -116,7 +110,7 @@ main > section:first-child > section:first-child {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    background:pink;
+    background: white;
     border-radius: 20px;
     margin-left: 5px;
 }
@@ -199,7 +193,6 @@ main > section:first-child > section > div:first-child > aside:nth-child(2) > di
 /*    top: 10vh;*/
 
 
-
 /*}*/
 /*main>section:first-child>div:nth-child(3){  !*main png*!*/
 /*    position: relative;*/
@@ -215,7 +208,6 @@ main > section:first-child > section > div:first-child > aside:nth-child(2) > di
 /*    !*width: 26vw;*!*/
 /*    !*height: 53vh;*!*/
 /*}*/
-
 
 
 /*main>section>article{*/
@@ -251,7 +243,6 @@ main > section:first-child > section > div:first-child > aside:nth-child(2) > di
 /*    margin-right: 0.5rem;*/
 
 /*}*/
-
 
 
 /*------------------------About me page--------------------------*/
@@ -382,20 +373,23 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     position: absolute;
     right: 0;
 }
-.serviceMain{
+
+.serviceMain {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.servTwoSide{
+
+.servTwoSide {
     display: flex;
     width: 370px;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     background-color: #e9e9e9;
     border-radius: 10px;
 
 }
+
 /**
 * my details column 2 span customized about section
 */
@@ -458,14 +452,14 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 /*---------------------------educaton-------------------------------------*/
 
 
-main>section:nth-child(3){
+main > section:nth-child(3) {
     position: relative;
     width: 99vw;
     height: 80vh;
 }
 
 
-main>section:nth-child(3)>h2{
+main > section:nth-child(3) > h2 {
     font-size: 200%;
     color: red;
     position: absolute;
@@ -474,7 +468,7 @@ main>section:nth-child(3)>h2{
 
 }
 
-main>section:nth-child(3)>aside:nth-child(2) {
+main > section:nth-child(3) > aside:nth-child(2) {
 
     display: flex;
     justify-content: center;
@@ -485,7 +479,7 @@ main>section:nth-child(3)>aside:nth-child(2) {
 }
 
 
-main>section:nth-child(3)>div{
+main > section:nth-child(3) > div {
 
     display: flex;
     justify-content: center;
@@ -494,7 +488,7 @@ main>section:nth-child(3)>div{
 
 }
 
-main>section:nth-child(3)>div>aside {
+main > section:nth-child(3) > div > aside {
     width: 30vw;
     font-size: 20px;
     color: black;
@@ -504,23 +498,23 @@ main>section:nth-child(3)>div>aside {
     letter-spacing: 2px;
 
 
-
 }
 
-#education_img{
+#education_img {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 350px;
     height: 250px;
 }
+
 /*--------------gallery---------------------*/
 
-main>section:nth-child(4){
+main > section:nth-child(4) {
     position: relative;
 }
 
-main>section:nth-child(4)>h2{
+main > section:nth-child(4) > h2 {
     font-size: 200%;
     color: red;
     position: absolute;
@@ -528,7 +522,7 @@ main>section:nth-child(4)>h2{
     left: 45vw;
 }
 
-main>section:nth-child(4)>div:nth-child(2){
+main > section:nth-child(4) > div:nth-child(2) {
     position: relative;
     display: flex;
     justify-content: center;
@@ -537,20 +531,20 @@ main>section:nth-child(4)>div:nth-child(2){
 
 }
 
-main>section:nth-child(4)>div>aside{
+main > section:nth-child(4) > div > aside {
     margin-right: 15px;
     box-shadow: 10px 10px 10px 1px indianred;
     border-radius: 20px;
 }
 
-#imgPos{
+#imgPos {
     position: relative;
     border-radius: 20px;
     bottom: 20vh;
 }
 
 
-main>section:nth-child(4)>div:nth-child(3){
+main > section:nth-child(4) > div:nth-child(3) {
     position: relative;
     display: flex;
     justify-content: center;
@@ -560,50 +554,48 @@ main>section:nth-child(4)>div:nth-child(3){
 
 }
 
-main>section:nth-child(4)>div:nth-child(3)>aside{
+main > section:nth-child(4) > div:nth-child(3) > aside {
     margin-right: 15px;
     box-shadow: 10px 10px 10px 1px palevioletred;
     /*box-shadow: 0px 0px 50px 30px indianred;*/
 
 }
 
-main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(1){
+main > section:nth-child(4) > div:nth-child(2) > aside:nth-child(1) {
     background: url("../gallery/dog1.jpg");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
 
-main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(2){
+main > section:nth-child(4) > div:nth-child(2) > aside:nth-child(2) {
     background: url("../gallery/cam1.jpg");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
 
-main>section:nth-child(4)>div:nth-child(2)>aside:nth-child(3){
+main > section:nth-child(4) > div:nth-child(2) > aside:nth-child(3) {
     background: url("../gallery/cae1.jpg ");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
 
-main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(1){
+main > section:nth-child(4) > div:nth-child(3) > aside:nth-child(1) {
     background: url("../gallery/rose1.jpg");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
 
-main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(2){
+main > section:nth-child(4) > div:nth-child(3) > aside:nth-child(2) {
     background: url("../gallery/sky1.jpg");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
 
-main>section:nth-child(4)>div:nth-child(3)>aside:nth-child(3){
+main > section:nth-child(4) > div:nth-child(3) > aside:nth-child(3) {
     background: url("../gallery/drink1.jpg");
-    background-position: center ;
-    background-size:cover ;
+    background-position: center;
+    background-size: cover;
 }
-
-
 
 
 /*---------------------------Skills-------------------------------------*/
@@ -624,7 +616,6 @@ main > section:nth-child(4) > section:first-child {
     text-align: center;
     padding-top: 68px;
 }
-
 
 
 #lan-heading {
@@ -689,20 +680,20 @@ main > section:nth-child(4) > section:first-child {
 
 /*-------------------------projects--------------------------*/
 
-main>section:nth-child(6){
+main > section:nth-child(6) {
     position: relative;
 }
 
 
-main>section:nth-child(6)>h2:nth-child(1){
+main > section:nth-child(6) > h2:nth-child(1) {
     font-size: 200%;
-    color: red;/**/
+    color: red; /**/
     display: inline-block;
     position: relative;
     left: 45%;
 }
 
-main>section:nth-child(6)>div:nth-child(2){
+main > section:nth-child(6) > div:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr  1fr;
@@ -713,13 +704,13 @@ main>section:nth-child(6)>div:nth-child(2){
 
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside{
+main > section:nth-child(6) > div:nth-child(2) > aside {
     height: 320px;
     position: relative;
     overflow: hidden;
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
+main > section:nth-child(6) > div:nth-child(2) > aside > h6 {
     position: relative;
     left: 4%;
     bottom: 31%;
@@ -728,16 +719,16 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h6 {
 
 }
 
-main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
+main > section:nth-child(6) > div:nth-child(2) > aside > h3 {
     position: relative;
     left: 4%;
     bottom: 35%;
     font-size: 25px;
-    color: black;/**/
+    color: black; /**/
     letter-spacing: 1px;
 }
 
-.projects{
+.projects {
     /*box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.3);*/
     box-shadow: 0px 0px 50px 30px indianred;
     border-radius: 15px;
@@ -745,23 +736,23 @@ main>section:nth-child(6)>div:nth-child(2)>aside>h3 {
 
 /*---------------------------services-------------------------------------*/
 
-main>section:nth-child(7){
+main > section:nth-child(7) {
     position: relative;
     height: 120vh;
 
 }
 
-main>section:nth-child(7)>h2:nth-child(2){
+main > section:nth-child(7) > h2:nth-child(2) {
     position: relative;
     display: flex;
     justify-content: center;
     top: 10%;
     font-size: 200%;
-    color: red;/**/
+    color: red; /**/
 
 }
 
-main>section:nth-child(7)>h1:nth-child(3){
+main > section:nth-child(7) > h1:nth-child(3) {
     position: relative;
     left: 18%;
     top: 18%;
@@ -770,7 +761,7 @@ main>section:nth-child(7)>h1:nth-child(3){
     letter-spacing: 2px;
 }
 
-main>section:nth-child(7)>div:nth-child(4){
+main > section:nth-child(7) > div:nth-child(4) {
     display: flex;
     gap: 20px;
     position: relative;
@@ -778,8 +769,8 @@ main>section:nth-child(7)>div:nth-child(4){
     top: 22%;
 }
 
-main>section:nth-child(7)>div:nth-child(4)>aside{
-    border-radius: 15px ;
+main > section:nth-child(7) > div:nth-child(4) > aside {
+    border-radius: 15px;
     border: 1px solid black;
     height: 56vh;
     width: 20vw;
@@ -788,14 +779,14 @@ main>section:nth-child(7)>div:nth-child(4)>aside{
     min-width: 280px;
 }
 
-main>section:nth-child(7)>div:nth-child(4)>aside>img{
+main > section:nth-child(7) > div:nth-child(4) > aside > img {
     position: relative;
     display: inline-block;
     left: 40%;
     top: 15%;
 }
 
-main>section:nth-child(7)>div:nth-child(4)>aside>h4{
+main > section:nth-child(7) > div:nth-child(4) > aside > h4 {
     position: relative;
     display: flex;
     color: black;
@@ -808,20 +799,20 @@ main>section:nth-child(7)>div:nth-child(4)>aside>h4{
 
 }
 
-main>section:nth-child(7)>div:nth-child(4)>aside>p{
+main > section:nth-child(7) > div:nth-child(4) > aside > p {
     position: relative;
     display: flex;
     justify-content: center;
     top: 25%;
 
     font-size: 18px;
-    color: black;/**/
+    color: black; /**/
     margin: 20px;
 
 
 }
 
-main>section:nth-child(7)>div:nth-child(1){
+main > section:nth-child(7) > div:nth-child(1) {
     position: relative;
     width: 150px;
     height: 150px;
@@ -838,12 +829,11 @@ main>section:nth-child(7)>div:nth-child(1){
 /*---------------------------Assigment-------------------------------------*/
 
 
-
-main>section:nth-child(8){
+main > section:nth-child(8) {
     height: 110vh;
 }
 
-main>section:nth-child(8)>div:nth-child(2){
+main > section:nth-child(8) > div:nth-child(2) {
     display: flex;
     justify-content: center;
     gap: 0px;
@@ -852,14 +842,14 @@ main>section:nth-child(8)>div:nth-child(2){
     width: 65vw;
     margin: auto;
     overflow: hidden;
-    overflow-x:scroll;
+    overflow-x: scroll;
     scroll-padding: 24px;
     justify-content: start;
 
 }
 
-main>section:nth-child(8)>div:nth-child(2)>aside{
-    border-radius: 15px ;
+main > section:nth-child(8) > div:nth-child(2) > aside {
+    border-radius: 15px;
     border: 1px solid white;
     height: 56vh;
     width: 31%;
@@ -870,29 +860,29 @@ main>section:nth-child(8)>div:nth-child(2)>aside{
     flex-shrink: 0;
     margin: 12px;
     min-width: 257px;
-    background-color:darkgray;
+    background-color: darkgray;
 
 
 }
 
-main>section:nth-child(8)>h2:nth-child(1){
+main > section:nth-child(8) > h2:nth-child(1) {
     position: relative;
     display: flex;
     top: 20vh;
     justify-content: center;
-    font-size:200%;
+    font-size: 200%;
     color: red;
 
 
 }
 
-main>section:nth-child(8)>div:nth-child(2)>aside>img{
+main > section:nth-child(8) > div:nth-child(2) > aside > img {
     position: relative;
     top: 15%;
     left: 40%;
 }
 
-main>section:nth-child(8)>div:nth-child(2)>aside>h3{
+main > section:nth-child(8) > div:nth-child(2) > aside > h3 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -900,23 +890,22 @@ main>section:nth-child(8)>div:nth-child(2)>aside>h3{
 
     letter-spacing: 1px;
     font-size: 25px;
-    color: black;/**/
+    color: black; /**/
 }
 
 
-
-main>section:nth-child(8)>div:nth-child(2)>aside>p{
+main > section:nth-child(8) > div:nth-child(2) > aside > p {
     position: relative;
     display: flex;
     justify-content: center;
     top: 25%;
 
     font-size: 18px;
-    color: black;/**/
+    color: black; /**/
     margin: 20px;
 }
 
-main>section:nth-child(8)>aside:nth-child(3){
+main > section:nth-child(8) > aside:nth-child(3) {
     position: relative;
     width: 15vw;
     height: 25vh;
@@ -928,31 +917,44 @@ main>section:nth-child(8)>aside:nth-child(3){
 }
 
 
-
 /*---------------------------contact me-------------------------------------*/
 
-.contact_section{
+body main .contact_section {
     position: relative;
+    width: 98%;
+    height: 95vh;
     bottom: 50px;
 }
 
-.form{
+.form {
     width: 500px;
     height: 300px;
-    border: 3px solid black;
+    border: 3px solid lightslategray;
     position: absolute;
     left: 10%;
-    top: 30%;
+    top: 50%;
     margin-bottom: 50px;
     background-color: #9494A1;
+    border-radius: 10px;
 }
-#adress_details{
+
+#adress_details {
     position: absolute;
+    top: 40%;
     right: 0;
 }
-#adress_details{
 
+#adress_details div img {
+    border-radius: 100%;
 }
+
+#adress_details div {
+    width: 200px;
+    height: auto;
+    font-size: 15px;
+    margin: 0px;
+}
+
 /*#ContactMe{*/
 /*    position: relative;*/
 /*    top: 35vh;*/
@@ -986,7 +988,6 @@ main>section:nth-child(8)>aside:nth-child(3){
 /*}*/
 
 
-
 /*footer>section:nth-child(2)>form{*/
 /*    grid-template-columns: 1fr 1fr;*/
 /*    grid-template-rows: 1fr 1fr;*/
@@ -996,7 +997,6 @@ main>section:nth-child(8)>aside:nth-child(3){
 /*    position: relative;*/
 /*    left: 41vw;*/
 /*    bottom: 1vh;*/
-
 
 
 /*}*/
@@ -1013,7 +1013,6 @@ main>section:nth-child(8)>aside:nth-child(3){
 /*    background-color: transparent;*/
 
 /*}*/
-
 
 
 /*#btnSubmit{*/
@@ -1041,26 +1040,22 @@ main>section:nth-child(8)>aside:nth-child(3){
 /*}*/
 
 
-
-
-
 /*li::marker{     !*remove indexing in menu*!*/
 /*    content: "";*/
 /*}*/
 
 
-*{
+* {
     color: black; /* all texts been white */
 
 }
 
-h2{       /*  heades colors to yellow*/
+h2 { /*  heades colors to yellow*/
     color: red;
 }
 
 
-
-textarea{
+textarea {
     background-color: transparent; /* input text area dtyles */
     border-radius: 10px;
     border-color: white;
