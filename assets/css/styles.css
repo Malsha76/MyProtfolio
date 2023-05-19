@@ -162,7 +162,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > s
 
 /*img*/
 main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
-    background: url(../gallery/my2.jpg);
+    background: url(../gallery/pp.jpg);
     width: 447px;
     height: 450px;
     background-size: cover;
@@ -382,7 +382,20 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     position: absolute;
     right: 0;
 }
+.serviceMain{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.servTwoSide{
+    display: flex;
+    width: 370px;
+   flex-direction: column;
+    align-items: center;
+    background-color: #e9e9e9;
+    border-radius: 10px;
 
+}
 /**
 * my details column 2 span customized about section
 */
@@ -494,7 +507,13 @@ main>section:nth-child(3)>div>aside {
 
 }
 
-
+#education_img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    height: 250px;
+}
 /*--------------gallery---------------------*/
 
 main>section:nth-child(4){
@@ -912,103 +931,114 @@ main>section:nth-child(8)>aside:nth-child(3){
 
 /*---------------------------contact me-------------------------------------*/
 
-footer{
+.contact_section{
     position: relative;
-    bottom: 650px;
+    bottom: 50px;
 }
 
-
-footer>section:nth-child(1){
-    position: relative;
+.form{
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    margin-bottom: 50px;
+    background-color: #9494A1;
 }
-
-
-#ContactMe{
-    position: relative;
-    top: 35vh;
-    display: flex;
-    justify-content: center;
-    font-size: 200%;
-    color: red;/**/
-
-
+#adress_details{
+    position: absolute;
+    right: 0;
 }
-
-
-footer>section:nth-child(1)>aside:nth-child(2){
-    display: flex;
-    flex-direction: column;
-}
-
-footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
-    position: relative;
-    left: 15vw;
-    top: 40vh;
-    display: inline-block;
-
+#adress_details{
 
 }
-
-footer>section:nth-child(1)>aside:nth-child(2)>div>img{
-    position: relative;
-    left: 14vw;
-    top: 40vh;
-}
-
-
-
-footer>section:nth-child(2)>form{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    display: grid;
-    width: 41vw;
-    gap: 10px;
-    position: relative;
-    left: 41vw;
-    bottom: 1vh;
+/*#ContactMe{*/
+/*    position: relative;*/
+/*    top: 35vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    font-size: 200%;*/
+/*    color: red;!**!*/
 
 
+/*}*/
 
-}
 
-footer>section:nth-child(2)>form>textarea {
-    position: relative;
-    width: 202%;
-}
+/*footer>section:nth-child(1)>aside:nth-child(2){*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-footer>section:nth-child(2)>form>input{
-    height: 6vh;
-    border-radius: 10px;  /*key bord input radius*/
-    border: solid white 1px;
-    background-color: transparent;
+/*footer>section:nth-child(1)>aside:nth-child(2)>div>aside{*/
+/*    position: relative;*/
+/*    left: 15vw;*/
+/*    top: 40vh;*/
+/*    display: inline-block;*/
 
-}
+
+/*}*/
+
+/*footer>section:nth-child(1)>aside:nth-child(2)>div>img{*/
+/*    position: relative;*/
+/*    left: 14vw;*/
+/*    top: 40vh;*/
+/*}*/
 
 
 
-#btnSubmit{
-    position: relative;
-    bottom: -0.1vh;
-    left: 41.1vw;
-    width: 150px;
-    height: 40px;
-    background: transparent;
-    border-radius: 15px;
-    border: solid white 1px;
+/*footer>section:nth-child(2)>form{*/
+/*    grid-template-columns: 1fr 1fr;*/
+/*    grid-template-rows: 1fr 1fr;*/
+/*    display: grid;*/
+/*    width: 41vw;*/
+/*    gap: 10px;*/
+/*    position: relative;*/
+/*    left: 41vw;*/
+/*    bottom: 1vh;*/
 
 
-}
-#btnCv{
-    position: relative;
-    bottom: 0;
-    left: 41.5vw;
-    border-radius: 15px;
-    border: solid white 1px;
-    display: inline-block;
-    width: 150px;
-    height: 40px;
-    background: transparent;
-}
+
+/*}*/
+
+/*footer>section:nth-child(2)>form>textarea {*/
+/*    position: relative;*/
+/*    width: 202%;*/
+/*}*/
+
+/*footer>section:nth-child(2)>form>input{*/
+/*    height: 6vh;*/
+/*    border-radius: 10px;  !*key bord input radius*!*/
+/*    border: solid white 1px;*/
+/*    background-color: transparent;*/
+
+/*}*/
+
+
+
+/*#btnSubmit{*/
+/*    position: relative;*/
+/*    bottom: -0.1vh;*/
+/*    left: 41.1vw;*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background: transparent;*/
+/*    border-radius: 15px;*/
+/*    border: solid white 1px;*/
+
+
+/*}*/
+/*#btnCv{*/
+/*    position: relative;*/
+/*    bottom: 0;*/
+/*    left: 41.5vw;*/
+/*    border-radius: 15px;*/
+/*    border: solid white 1px;*/
+/*    display: inline-block;*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background: transparent;*/
+/*}*/
 
 
 
