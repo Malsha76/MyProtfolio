@@ -413,9 +413,8 @@ function updateItem(itemID) {
     }
 }
 
-//--------------------------------------------//
-<!-- Start Item Update Regex -->
-//--------------------------------------------//
+
+ /*Regex */
 
 updateItemValidations.push({
     itemReg: regItemCode,
@@ -516,7 +515,3 @@ function clearUpdateItemAllTexts() {
     $("#itemID,#itemName,#itemPrice,#itemQuantity").val("");
     checkUpdateItemValidity();
 }
-
-//--------------------------------------------//
-<!-- Ended Item Update Regex -->
-//--------------------------------------------//
