@@ -1,6 +1,3 @@
-/**
- * Customized Scrollbar.
- */
 ::-webkit-scrollbar {
     width: 4px;
     background: #3f3838;
@@ -9,8 +6,7 @@
 ::-webkit-scrollbar-thumb {
     background: #01BCA2;
 }
-
-main{
+main {
     height: 80vh;
 }
 
@@ -19,45 +15,45 @@ main{
     border: #E94F5B;
 }
 
-.red-text{
+.red-text {
     color: #E94F5B;
 }
 
-.green-text{
-    color: #01BCA2;
+.green-text {
+    color: purple;
 }
 
-.green-hd{
-   background: #01BCA2;
+.green-hd {
+    background:purple;
 }
 
-.green-ww-bg{
-    background: #55efc4;
+.green-ww-bg {
+    background: purple;
     color: #FFFFFF;
     border: none;
     font-size: 1em;
 }
 
-.orange-ww-bg{
-    background: #ff7675;
+.orange-ww-bg {
+    background: hotpink;
     color: #FFFFFF;
     border: none;
 }
 
-i:hover{
+i:hover {
     cursor: pointer;
 }
 
 .h-70 {
-    height: 70%!important;
+    height: 70% !important;
 }
 
 .w-87 {
-    width: 87%!important;
+    width: 87% !important;
 }
 
 .h-60 {
-    height: 60%!important;
+    height: 60% !important;
 }
 
 /**
@@ -108,4 +104,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.ubFt {
+    font-family: 'Ubuntu', sans-serif;
 }
