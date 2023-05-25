@@ -336,7 +336,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 24px;
-    color: #9494A1 !important;
+    color: black !important;
     margin-top: 0;
 }
 
@@ -398,9 +398,10 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 .servTwoSide {
     display: flex;
     width: 370px;
+    height: 300px;
     flex-direction: column;
     align-items: center;
-    background-color: #e9e9e9;
+    background-color:gainsboro;
     border-radius: 10px;
 
 }
