@@ -1,0 +1,261 @@
+@media screen and (max-width: 320px) {
+
+
+    body > section:nth-child(1) {
+        height: 106vh;
+        width: 95.5vw;
+    }
+
+    header {
+        height: 2%;
+    }
+
+    header > nav > li {
+        display: none;
+    }
+
+    main > section:first-child > img {
+        bottom: 36vh;
+        left: 6vw;
+        width: 76vw;
+        height: 37vh;
+    }
+
+    main>section:first-child>img {
+        width: 76vw;
+        height: 37vh;
+    }
+
+
+    header {
+        display: none;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    /*---------------------------main-------------------------------------*/
+    main > section:first-child > h2 {
+        font-size: 2.3rem;
+        top: 20vh;
+    }
+
+    main > section:first-child > h1 {
+        font-size: 38px;
+        top: 15vh;
+    }
+
+    main > section > article {
+        bottom: 8vh;
+    }
+
+    main > section:nth-child(1) > nav { /*soceal meadia*/
+        bottom: 8vh;
+        left: 17.5vw;
+    }
+
+
+
+    body>section:nth-child(2) {
+        width: 196px;
+        height: 201px;
+        left: 21vw;
+        top: 66px;
+    }
+
+
+    /*-----gall----*/
+    main > section:nth-child(4) > h2 {
+        font-size: 250%;
+        top: 10vh;
+        left: 25vw;
+    }
+
+    #img1 {
+        top: 1.5vh;
+        border-radius: 20px;
+    }
+
+    #img2 {
+        top: 20.5vh;
+        border-radius: 20px;
+    }
+
+    main > section:nth-child(4) > div:nth-child(2) {
+        left: -1vw;
+        top: 26vh;
+    }
+
+    #img2 {
+        top: -4.5vh;
+    }
+
+    main > section:nth-child(4) > div:nth-child(3) {
+        left: -1vw;
+        top: 19vh;
+    }
+
+    /*----service----*/
+    main > section:nth-child(7) > h2:nth-child(2) {
+        top: -2%;
+    }
+
+    main > section:nth-child(7) > h1:nth-child(3) {
+        left: 18%;
+        top: -4%;
+
+    }
+
+    main > section:nth-child(7) > div:nth-child(4) {
+        top: 1%;
+        flex-direction: column;
+        left: 20px;
+    }
+
+
+
+    main > section:nth-child(7) {
+        height: 230vh;
+    }
+
+
+    /*---assigment----*/
+    main > section:nth-child(8) > h2:nth-child(1) {
+        font-size: 250%;
+    }
+
+    main>section:nth-child(8)>div:nth-child(2) {
+        width: 85vw;
+    }
+
+
+
+    /*------------------------------contact me----------------------------------*/
+    #ContactMe {
+        font-size: 250%;
+    }
+
+    footer > section:nth-child(2) > form > input {
+        width: 82vw;
+    }
+
+    footer > section:nth-child(2) > form > textarea {
+        width: 98%;
+    }
+
+    #btnCv {
+        bottom: -44vh;
+        left: 12.5vw;
+        width: 137px;
+    }
+
+    #btnSubmit {
+        bottom: -44.1vh;
+        left: 8.100000000000001vw;
+        width: 110px;
+    }
+
+    footer > section:nth-child(2) > form {
+        left: 8vw;
+        bottom: -42vh;
+        grid-template-columns: revert;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(3) > h4 {
+        font-size: 10px;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(2) > div > aside {
+        font-size: 10px;
+    }
+
+    footer > section:nth-child(1) > aside:nth-child(2) > div > img {
+        height: 50px;
+        width: 50px;
+    }
+
+
+}
+/*---------------------------------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 375px){
+}
+@media screen and (min-width: 375px) and (max-width: 425px){}
+@media screen and (min-width: 425px) and (max-width: 768px){}
+
+
+/*---------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+
+
+    /*- contact me -*/
+
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>img {
+        left: 5vw;
+    }
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>aside {
+        left: 7vw;
+    }
+}
+/*---------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+
+
+
+    header>nav>li {
+        left: 30vw;
+        font-size: 12px;
+        margin: 15px;
+    }
+
+
+    /*------------------------------main---------------------------------*/
+
+    main>section:first-child>img {
+        width: 30vw;
+        height: 45vh;
+    }
+
+    /*------------------------------about---------------------------------*/
+
+
+
+    main>section:nth-child(2)>aside:nth-child(2) {
+        left: 54%;
+        top: -30vh;
+        width: 60vh;
+    }
+
+    main>section:nth-child(2)>aside:nth-child(2)>p:last-child {
+        font-size: 120%;
+    }
+
+
+
+
+    /*------------------------------skills----------------------------------*/
+
+
+    main>section:nth-child(5) {
+        height: 166vh;
+    }
+
+
+    /*---contact me---*/
+
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>aside{
+        font-size: 13px;
+    }
+
+    footer>section:nth-child(1)>aside:nth-child(2)>div>img {
+        height: 50px;
+        width: 50px;
+    }
+
+}
