@@ -1,19 +1,10 @@
 
+let customers = [];
+
 // stating focus customerID
 $("#customer-id").focus();
 $("#customerID").focus();
 
-// generate CustomerID
-function generateCustomerID() {
-    if (customers.length > 0) {
-        let lastId = customers[customers.length - 1].id;
-        let digit = lastId.substring(6);
-        let number = parseInt(digit) + 1;
-        return lastId.replace(digit, number);
-    } else {
-        return "C00-001";
-    }
-}
 // add new customer
 $("#newCustomer").click(function () {
     let customerID = $("#customer-id").val();
@@ -21,8 +12,12 @@ $("#newCustomer").click(function () {
     let customerAddress = $("#customer-address").val();
     let customerSalary = $("#customer-salary").val();
 
-    let customerObject = new CustomerDTO(customerID, customerName, customerAddress, customerSalary);
-
+    let customerObject = {
+        id: customerID,
+        name: customerName,
+        address: customerAddress,
+        salary: customerSalary
+    };
     customers.push(customerObject);
     //customer saved alert
     Swal.fire({
@@ -33,11 +28,9 @@ $("#newCustomer").click(function () {
         timer: 1500
     })
     loadAllCustomers();
-    dblCustomerRowClickEvents();
-    bindCustomerRowClickEvents();
+    bindRowClickEvents();
+    dblRowClickEvents();
     clearAllTexts();
-    loadAllCustomersForOption();
-    $("#customer-id").val(generateCustomerID());
 });
 
 // load all customers function
@@ -52,7 +45,7 @@ function loadAllCustomers() {
 }
 
 // setting all table records details values to text fields
-function bindCustomerRowClickEvents() {
+function bindRowClickEvents() {
     $("#tblCustomer>tr").click(function () {
         let cusId = $(this).children(":eq(0)").text();
         let cusName = $(this).children(":eq(1)").text();
@@ -67,7 +60,7 @@ function bindCustomerRowClickEvents() {
 }
 
 // double clicked delete function
-function dblCustomerRowClickEvents() {
+function dblRowClickEvents() {
     $("#tblCustomer>tr").on('dblclick', function () {
         let deleteCusID = $(this).children(":eq(0)").text();
 
@@ -156,7 +149,7 @@ $("#customer-id,#customer-name,#customer-address,#customer-salary").on('blur', f
 
 // customer-id focus event
 $("#customer-id").on('keydown', function (event) {
-    if (event.key == "Enter" && check(regCusID, $("#cus-id"))) {
+    if (event.key == "Enter" && check(regCusID, $("#customer-id"))) {
         $("#customer-name").focus();
     } else {
         focusText($("#customer-id"));
@@ -362,8 +355,8 @@ function setButtonState(value) {
 
 // clear added text fields function
 function clearAllTexts() {
-    $("#customer-name").focus();
-    $("#customer-name,#customer-address,#customer-salary").val("");
+    $("#customer-id").focus();
+    $("#customer-id,#customer-name,#customer-address,#customer-salary").val("");
     checkValidity();
 }
 
@@ -518,4 +511,3 @@ function clearUpdateCustomerAllTexts() {
     $("#customerID,#customerName,#customerAddress,#customerSalary").val("");
     checkUpdateCustomerValidity();
 }
-

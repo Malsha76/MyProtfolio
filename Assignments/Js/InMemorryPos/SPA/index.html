@@ -162,8 +162,9 @@
                             <form class="ubFt">
                                 <div class="ms-3 me-3">
                                     <label for="customer-id" class="col-form-label">Customer ID:</label>
-                                    <input type="text" class="form-control" disabled id="customer-id">
-                                    <small class="control-error text-danger" id="lblCusID"></small>
+                                    <input type="text" class="form-control"
+                                           id="cus-id">
+                                    <small class="control-error text-danger" id="lblCuID"></small>
                                 </div>
                                 <div class="ms-3 me-3">
                                     <label for="customer-name" class="col-form-label">Customer Name:</label>
@@ -230,7 +231,7 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" id="clearUpdateCustomer" class="btn btn-warning">Clear</button>
-                            <button type="button" id="updateCustomerBtn" class="btn btn-success">Save</button>
+                            <button type="button" id="CustomerBtn" class="btn btn-success">Save</button>
                         </div>
                     </div>
                 </div>
@@ -618,7 +619,7 @@
 <!--Item Model Object JS-->
 <script src="model/itemDTO.js"></script>
 <script>
-    document.getElementById("cusAddress").addEventListener("click", function () {
+    document.getElementById("CustomerBtn").addEventListener("click", function () {
         let Id = document.getElementById("CustomerID").value;
         let Name = document.getElementById("Name").value;
         let Address = document.getElementById("Address").value;
