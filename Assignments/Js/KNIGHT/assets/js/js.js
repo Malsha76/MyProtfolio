@@ -1,4 +1,5 @@
 let id = 0;
+const music = new Audio('assets/audio/Kitt  Scanner Sound HD.mp3');
 var kitt = {
     count: 0,
     tempArray: [],
@@ -40,7 +41,7 @@ function renderKit() {
 
 $("#btnStart").click(function () {
     clearInterval(id);
-    id = setInterval(renderKit, 130);
+    id = setInterval(renderKit, 110);
     music.play();
     music.loop = true;
 });

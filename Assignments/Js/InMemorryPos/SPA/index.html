@@ -648,7 +648,37 @@
 <!--</script>-->
 
 <script>
+    let CustomerObj={
+        nic:"",
+        name:"",
+        address:"",
+        salary:"",
+    }
 
+    // let customerDB = [];
+    $("#btnAddToCustomerTable").click(function () {
+        // addCustomer();
+        let nic = $("#Nic").val();
+        let name = $("#Cus_Name").val();
+        let address = $("#Address").val();
+        let salary = $("#Salary").val();
+
+        let customer = [nic, name, address, salary];
+        CustomerObj.nic=nic[0];
+        CustomerObj.name=name[1];
+        CustomerObj.address=address[2];
+        CustomerObj.salary=salary[3];
+
+
+        let row = <tr>
+            <td>${CustomerObj.nic}</td>
+            <td>${CustomerObj.name}</td>
+            <td>${CustomerObj.address}</td>
+            <td>${CustomerObj.salary}</td>
+        </tr>;
+        $("#tblCustomer").append(row);
+
+    });
 </script>
 </body>
 </html>
