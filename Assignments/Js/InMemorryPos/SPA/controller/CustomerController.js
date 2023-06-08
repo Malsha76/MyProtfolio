@@ -115,26 +115,26 @@ let regCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 // customer validation array
 let customerValidations = [];
 let updateCustomerValidations = [];
-
+/////////////////////////////////
 customerValidations.push({
     reg: regCusID,
     field: $('#customer-id'),
-    error: 'Customer ID Pattern is Wrong : C00-001'
+    // error: 'Customer ID Pattern is Wrong : C00-001'
 });
 customerValidations.push({
     reg: regCusName,
     field: $('#customer-name'),
-    error: 'Customer Name Pattern is Wrong : A-z 5-20'
+    // error: 'Customer Name Pattern is Wrong : A-z 5-20'
 });
 customerValidations.push({
     reg: regCusAddress,
     field: $('#customer-address'),
-    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
+    // error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
 });
 customerValidations.push({
     reg: regCusSalary,
     field: $('#customer-salary'),
-    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
+    // error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
 });
 
 // disable tab key of all four text fields using grouping selector in CSS
@@ -416,29 +416,7 @@ function updateCustomer(customerID) {
 }
 
 //--------------------------------------------//
-<!-- Start Customer Update Regex -->
-//--------------------------------------------//
 
-updateCustomerValidations.push({
-    reg: regCusID,
-    field: $('#customerID'),
-    error: 'Customer ID Pattern is Wrong : C00-001'
-});
-updateCustomerValidations.push({
-    reg: regCusName,
-    field: $('#customerName'),
-    error: 'Customer Name Pattern is Wrong : A-z 5-20'
-});
-updateCustomerValidations.push({
-    reg: regCusAddress,
-    field: $('#customerAddress'),
-    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
-});
-updateCustomerValidations.push({
-    reg: regCusSalary,
-    field: $('#customerSalary'),
-    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
-});
 
 // disable tab key of all four text fields using grouping selector in CSS
 $("#customerID,#customerName,#customerAddress,#customerSalary").on('keydown', function (event) {
