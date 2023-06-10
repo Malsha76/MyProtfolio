@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cal</title>
+    <style>
+
+        .calculator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 80%;
+            width: 35%;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            background-color:white;
+            border: black solid 1px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 5px;
+        }
+
+        .calculator button {
+            font-size: 1.5rem;
+            font-weight: normal;
+            cursor: pointer;
+            height: 100%;
+            border: none;
+
+        }
+
+        #display {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            height: 90%;
+            font-weight: normal;
+            font-size: 1rem;
+            text-align: right;
+            background: grey;
+            border: none;
+
+        }
+
+        .calculator > button:nth-child(18) {
+            grid-row-start: 1;
+        }
+
+        .numbers {
+            background:gray;
+        }
+
+        .operators {
+            background: cornflowerblue;
+        }
+
+        #cbtn {
+            background: darkred;
+        }
+
+        #eqbtn {
+            background: cornflowerblue;
+        }
+
+        .numbers:hover {
+            background: darkslateblue;
+            color: white;
+        }
+
+        .operators:hover {
+            background: darkslateblue;
+            color: white;
+        }
+        #cbtn:hover {
+            background:darkred;
+            color: white;
+        }
+
+        #eqbtn:hover {
+            background: darkslateblue;
+            color: white;
+        }
+
+
+        @media all and (max-width: 450px) {
+            .calculator {
+                width: 80%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="calculator">
+
+    <input type="text" id="display" readonly>
+    <button class="numbers" onclick="Display('7')">7</button>
+    <button class="numbers" onclick="Display('8')">8</button>
+    <button class="numbers" onclick="Display('9')">9</button>
+    <button class="operators" onclick="Display('/')">/</button>
+    <button class="numbers" onclick="Display('4')">4</button>
+    <button class="numbers" onclick="Display('5')">5</button>
+    <button class="numbers" onclick="Display('6')">6</button>
+    <button class="operators" onclick="Display('*')">*</button>
+    <button class="numbers" onclick="Display('1')">1</button>
+    <button class="numbers" onclick="Display('2')">2</button>
+    <button class="numbers" onclick="Display('3')">3</button>
+    <button class="operators" onclick="Display('-')">-</button>
+    <button class="numbers" onclick="Display('0')">0</button>
+    <button class="numbers" onclick="Display('.')">.</button>
+    <button id="eqbtn" onclick="calculate()">=</button>
+    <button class="operators" onclick="Display('+')">+</button>
+    <button id="cbtn" onclick="clearDisplay()">C</button>
+
+</div>
+<script>
+    let display = document.getElementById('display');
+
+    function Display(value) {
+        display.value += value;
+    }
+
+    function calculate() {
+        let result = eval(display.value);
+        display.value = result;
+    }
+
+    function clearDisplay() {
+        display.value = '';
+    }
+
+</script>
+</body>
+</html>
