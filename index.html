@@ -34,7 +34,9 @@
 </head>
 
 
-<body>
+<body onload="loadingLoader()">
+<section onload="loadingLoder()">
+
 <section>
 </section>
 <section></section>
@@ -381,6 +383,7 @@
                 <!--                <h3>Vehicle Rental System</h3>-->
                 <div>
                     <h2>Vehicle Rental System </h2>
+<!--                    <a href="https://github.com/Malsha76/Vehicle-Rent">-->
 
                 </div>
             </aside>
@@ -462,7 +465,7 @@
             <aside>
 <!--                <img src="assets/img/clipboard%20(1)%202%20(1).png" alt="assignment 1" height="70" width="70">-->
 <!--                <a href="https://github.com/Malsha76/MyProtfolio/blob/master/Assignments/CSS/case1.html">-->
-                <a href="http://localhost:63342/MyProtfolio/Assignments/CSS/case1.html?_ijt=8hn73982efcpqt7p0no9093k74&_ij_reload=RELOAD_ON_SAVE">
+                <a href="Assignments/Transitions/case01">
                     <img src="assets/img/clipboard%20(1)%202%20(1).png" alt="assignment 2" height="70" width="70">
                 <h3>Assignment 01</h3>
                 <p>CSS Basic</p></a>
@@ -696,7 +699,13 @@
 <footer>
 
 </footer>
+<script>
+    let loader=document.getElementById('loader')
+    function loadingLoader () {
+        loader.style.display='none';
 
+    }
+</script>
 </body>
 
 

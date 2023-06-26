@@ -604,6 +604,8 @@
 <script src="controller/DashboardController.js"></script>
 <!--Customer JS-->
 <script src="controller/CustomerController.js"></script>
+<!--<script src="controller/Validations/CustomerValidation.js"></script>-->
+
 <!--Item JS-->
 <script src="controller/ItemController.js"></script>
 <!--Place Order JS-->
@@ -647,38 +649,55 @@
 <!--    })-->
 <!--</script>-->
 
-<script>
-    let CustomerObj={
-        nic:"",
-        name:"",
-        address:"",
-        salary:"",
-    }
+<!--<script>-->
+<!--    let CustomerObj={-->
+<!--        nic:"",-->
+<!--        name:"",-->
+<!--        address:"",-->
+<!--        salary:"",-->
+<!--    }-->
 
-    // let customerDB = [];
-    $("#btnAddToCustomerTable").click(function () {
-        // addCustomer();
-        let nic = $("#Nic").val();
-        let name = $("#Cus_Name").val();
-        let address = $("#Address").val();
-        let salary = $("#Salary").val();
+<!--    // let customerDB = [];-->
+<!--    $("#btnAddToCustomerTable").click(function () {-->
+<!--        // addCustomer();-->
+<!--        let nic = $("#Nic").val();-->
+<!--        let name = $("#Cus_Name").val();-->
+<!--        let address = $("#Address").val();-->
+<!--        let salary = $("#Salary").val();-->
 
-        let customer = [nic, name, address, salary];
-        CustomerObj.nic=nic[0];
-        CustomerObj.name=name[1];
-        CustomerObj.address=address[2];
-        CustomerObj.salary=salary[3];
+<!--        let customer = [nic, name, address, salary];-->
+<!--        CustomerObj.nic=nic[0];-->
+<!--        CustomerObj.name=name[1];-->
+<!--        CustomerObj.address=address[2];-->
+<!--        CustomerObj.salary=salary[3];-->
 
 
-        let row = <tr>
-            <td>${CustomerObj.nic}</td>
-            <td>${CustomerObj.name}</td>
-            <td>${CustomerObj.address}</td>
-            <td>${CustomerObj.salary}</td>
-        </tr>;
-        $("#tblCustomer").append(row);
+<!--        let row = <tr>-->
+<!--            <td>${CustomerObj.nic}</td>-->
+<!--            <td>${CustomerObj.name}</td>-->
+<!--            <td>${CustomerObj.address}</td>-->
+<!--            <td>${CustomerObj.salary}</td>-->
+<!--        </tr>;-->
+<!--        $("#tblCustomer").append(row);-->
 
-    });
-</script>
+<!--    });-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    function loadDataCustomer() {-->
+<!--        $("#tblCustomer>tr").click(function () {-->
+<!--            let id = $(this).children(":eq(0)").text();-->
+<!--            let name = $(this).children(":eq(1)").text();-->
+<!--            let address = $(this).children(":eq(2)").text();-->
+<!--            let salary = $(this).children(":eq(3)").text();-->
+<!--            $("#cus-id").val(id);-->
+<!--            $("#cus-name").val(name);-->
+<!--            $("#cusAddress").val(address);-->
+<!--            $("#cusSalary").val(salary);-->
+
+<!--        });-->
+<!--    }-->
+
+<!--</script>-->
 </body>
 </html>

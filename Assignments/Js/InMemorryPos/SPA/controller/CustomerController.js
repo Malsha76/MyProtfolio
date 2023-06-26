@@ -115,71 +115,71 @@ let regCusSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 // customer validation array
 let customerValidations = [];
 let updateCustomerValidations = [];
-/////////////////////////////////
+
 customerValidations.push({
     reg: regCusID,
     field: $('#customer-id'),
-    // error: 'Customer ID Pattern is Wrong : C00-001'
+    error: 'Customer ID Pattern is Wrong : C00-001'
 });
 customerValidations.push({
     reg: regCusName,
-    field: $('#customer-name'),
-    // error: 'Customer Name Pattern is Wrong : A-z 5-20'
+    field: $('#cus-name'),
+    error: 'Customer Name Pattern is Wrong : A-z 5-20'
 });
 customerValidations.push({
     reg: regCusAddress,
-    field: $('#customer-address'),
-    // error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
+    field: $('#cus-address'),
+    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
 });
 customerValidations.push({
     reg: regCusSalary,
-    field: $('#customer-salary'),
-    // error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
+    field: $('#cus-salary'),
+    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
 });
 
 // disable tab key of all four text fields using grouping selector in CSS
-$("#customer-id,#customer-name,#customer-address,#customer-salary").on('keydown', function (event) {
+$("#customer-id,#cus-name,#cus-address,#cus-salary").on('keydown', function (event) {
     if (event.key == "Tab") {
         event.preventDefault();
     }
 });
 
 // grouping all fields keyup event using and call check validity function
-$("#customer-id,#customer-name,#customer-address,#customer-salary").on('keyup', function (event) {
+$("#customer-id,#cus-name,#cus-address,#cus-salary").on('keyup', function (event) {
     checkValidity();
 });
 
 // grouping all fields blur event using and call check validity function
-$("#customer-id,#customer-name,#customer-address,#customer-salary").on('blur', function (event) {
+$("#customer-id,#cus-name,#cus-address,#cus-salary").on('blur', function (event) {
     checkValidity();
 });
 
 // customer-id focus event
 $("#customer-id").on('keydown', function (event) {
-    if (event.key == "Enter" && check(regCusID, $("#cus-id"))) {
-        $("#customer-name").focus();
+    if (event.key == "Enter" && check(regCusID, $("#customer-id"))) {
+        $("#cus-name").focus();
     } else {
         focusText($("#customer-id"));
     }
 });
 
 // customer-name focus event
-$("#customer-name").on('keydown', function (event) {
-    if (event.key == "Enter" && check(regCusName, $("#customer-name"))) {
+$("#cus-name").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusName, $("#cus-name"))) {
         focusText($("#customer-address"));
     }
 });
 
 // customer-address focus event
-$("#customer-address").on('keydown', function (event) {
+$("#cus-address").on('keydown', function (event) {
     if (event.key == "Enter" && check(regCusAddress, $("#customer-address"))) {
         focusText($("#customer-salary"));
     }
 });
 
 // customer-salary focus event
-$("#customer-salary").on('keydown', function (event) {
-    if (event.key == "Enter" && check(regCusSalary, $("#customer-salary"))) {
+$("#cus-salary").on('keydown', function (event) {
+    if (event.key == "Enter" && check(regCusSalary, $("#cus-salary"))) {
         $("#newCustomer").focus();
     }
 });
@@ -416,7 +416,29 @@ function updateCustomer(customerID) {
 }
 
 //--------------------------------------------//
+<!-- Start Customer Update Regex -->
+//--------------------------------------------//
 
+updateCustomerValidations.push({
+    reg: regCusID,
+    field: $('#customerID'),
+    error: 'Customer ID Pattern is Wrong : C00-001'
+});
+updateCustomerValidations.push({
+    reg: regCusName,
+    field: $('#customerName'),
+    error: 'Customer Name Pattern is Wrong : A-z 5-20'
+});
+updateCustomerValidations.push({
+    reg: regCusAddress,
+    field: $('#customerAddress'),
+    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
+});
+updateCustomerValidations.push({
+    reg: regCusSalary,
+    field: $('#customerSalary'),
+    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
+});
 
 // disable tab key of all four text fields using grouping selector in CSS
 $("#customerID,#customerName,#customerAddress,#customerSalary").on('keydown', function (event) {
@@ -497,3 +519,4 @@ function clearUpdateCustomerAllTexts() {
     checkUpdateCustomerValidity();
 }
 
+///////////////////////////////////////////////////////////////

@@ -23,13 +23,13 @@ $("#newItem").click(function () {
 
     items.push(itemObject);
     //item saved alert
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your Item has been saved',
-        showConfirmButton: false,
-        timer: 1500
-    })
+    // Swal.fire({
+    //     position: 'top-end',
+    //     icon: 'success',
+    //     title: 'Your Item has been saved',
+    //     showConfirmButton: false,
+    //     timer: 1500
+    // })
     loadAllItems();
     dblItemRowClickEvents();
     bindItemRowClickEvents();
@@ -60,7 +60,7 @@ function dblItemRowClickEvents() {
             showCancelButton: true,
             confirmButtonText: 'Delete',
             confirmButtonColor: '#3085d6',
-            denyButtonText: `Don't Delete`,
+            // denyButtonText: `Don't Delete`,
         }).then((result) => {
             if (result.isConfirmed) {
                 $(this).remove(); //select the row which runs the event at the moment and then delete it
@@ -68,7 +68,7 @@ function dblItemRowClickEvents() {
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',
-                        title: 'Delete Successfully',
+                        // title: 'Delete Successfully',
                         showConfirmButton: false,
                         timer: 1500
                     })
